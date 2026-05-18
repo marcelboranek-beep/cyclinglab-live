@@ -1,4 +1,5 @@
-import Image from "next/image";export default function CustomCyclingLab() {
+import Image from "next/image";
+export default function CustomCyclingLab() {
   const services = [
     {
       title: "Individuální servis kol",
