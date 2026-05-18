@@ -258,3 +258,6 @@ export default function CustomCyclingLab() {
     </main>
   );
 }
+cat app/page.tsx
+git add .
+git commit -m "Final website"
