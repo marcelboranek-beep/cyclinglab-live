@@ -2,19 +2,19 @@ export default function CustomCyclingLab() {
   const services = [
     {
       title: "Individuální servis kol",
-      text: "Kompletní péče o vaše kolo s důrazem na detail.",
+      text: "Kompletní péče o tvoje kolo s důrazem na detail.",
     },
     {
       title: "Individuální stavby kol",
-      text: "Kolo na míru vašim potřebám, vaší jízdě a vašemu cíli.",
+      text: "Kolo na míru individuálním požadavkům.",
     },
     {
-      title: "Servis závodních kol",
-      text: "Specializovaný servis pro závodní a náročné jezdce.",
+      title: "Vyzvednutí kola u zákazníka",
+      text: "Nemáš čas? Nevadí, kolo si vyzvednu kde bude potřeba.",
     },
     {
       title: "Odborná konzultace",
-      text: "Pomohu s výběrem, nastavením a optimalizací vašeho kola.",
+      text: "Pomohu s výběrem, nastavením a seřízením tvého kola.",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function CustomCyclingLab() {
               O mně
             </a>
             <a href="#work" className="hover:opacity-70 transition">
-              Realizace
+              Stavby kol
             </a>
             <a href="#contact" className="hover:opacity-70 transition">
               Kontakt
@@ -57,7 +57,7 @@ export default function CustomCyclingLab() {
         <div className="relative z-10 flex h-[75vh] items-center px-8 md:px-16">
           <div className="max-w-2xl">
             <h2 className="text-5xl leading-tight md:text-7xl font-light">
-              Váš výkon začíná
+              Radost z kola začíná
               <br />
               v detailech.
             </h2>
@@ -65,7 +65,7 @@ export default function CustomCyclingLab() {
             <p className="mt-10 max-w-xl text-lg leading-relaxed text-white/80">
               Individuální přístup. Maximální preciznost.
               <br />
-              Kola stvořená pro vás.
+              Kola stvořená pro tebe.
             </p>
 
             <button className="mt-12 border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300">
@@ -109,7 +109,7 @@ export default function CustomCyclingLab() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="uppercase tracking-[0.3em] text-sm text-white/50">
-              Realizace
+              Stavby kol
             </p>
 
             <h2 className="mt-8 text-5xl md:text-6xl font-light leading-tight">
@@ -167,12 +167,12 @@ export default function CustomCyclingLab() {
           </h2>
 
           <p className="mt-10 text-lg leading-relaxed text-black/70">
-            Cyklistice se věnuji celý život. Každé kolo, které projde mýma
+            Cyklistice se věnuji více jak deset let. Každé kolo, které projde mýma
             rukama, dostává maximální péči a individuální přístup.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-black/70">
-            Mým cílem je jediné — aby vaše kolo fungovalo dokonale.
+            Mým cílem je jediné — aby tvoje kolo fungovalo dokonale.
           </p>
 
           <button className="mt-12 border-b border-black pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition">
