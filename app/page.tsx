@@ -11,7 +11,7 @@ export default function CustomCyclingLab() {
     },
     {
       title: "Vyzvednutí kola u zákazníka",
-      text: "Nemáš čas? Nevadí, kolo si vyzvednu kde bude potřeba.",
+      text: "Nemáš čas? Nevadí, kolo si vyzvednu, kde bude potřeba.",
     },
     {
       title: "Odborná konzultace",
@@ -165,7 +165,7 @@ export default function CustomCyclingLab() {
           <h2 className="mt-8 text-5xl font-light leading-tight">
             Preciznost.
             <br />
-            Zkušenosti.
+            Zkušenost.
             <br />
             Vášeň.
           </h2>
