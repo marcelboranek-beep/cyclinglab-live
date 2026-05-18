@@ -30,12 +30,15 @@ export default function CustomCyclingLab() {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
 
         <header className="relative z-10 flex items-center justify-between px-8 py-8 md:px-16">
-          <div>
-            <h1 className="text-5xl font-light tracking-tight">CCL</h1>
-            <p className="mt-2 text-2xl font-light">Custom Cycling Lab</p>
-            <p className="mt-1 text-sm tracking-[0.35em] uppercase text-white/70">
-              Marcel Bořánek
-            </p>
+            <div className="relative w-[220px] h-[90px]">
+  <Image
+    src="/logo-white.png"
+    alt="Custom Cycling Lab"
+    fill
+    className="object-contain"
+    priority
+  />
+</div>
           </div>
 
           <nav className="hidden gap-10 text-sm uppercase tracking-[0.25em] md:flex">
