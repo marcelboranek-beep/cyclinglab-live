@@ -81,40 +81,41 @@ export default function CustomCyclingLab() {
         id="services"
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-0 border-t border-black/10"
       >
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="border-b border-r border-black/10 p-10 md:p-14 min-h-[320px] flex flex-col justify-between"
-          >
-            <div>
-              <div className="mb-10 text-sm uppercase tracking-[0.25em] text-black/40">
-                0{index + 1}
-              </div>
+       {services.map((service, index) => (
+  <div
+    key={index}
+    className="border-b border-r border-black/10 p-10 md:p-14 min-h-[320px] flex flex-col justify-between"
+  >
+    <div>
+      <div className="mb-10 text-sm uppercase tracking-[0.25em] text-black/40">
+        0{index + 1}
+      </div>
 
-              <h3 className="text-3xl font-light leading-snug max-w-xs">
-                {service.title}
-              </h3>
+      <h3 className="text-3xl font-light leading-snug max-w-xs">
+        {service.title}
+      </h3>
 
-              <p className="mt-8 text-black/60 leading-relaxed max-w-sm">
-                {service.text}
-              </p>
-            </div>
-<a
-  href={
-    index === 0
-      ? "/servis-kol"
-      : index === 1
-      ? "/stavby-kol"
-      : index === 2
-      ? "/vyzvednuti"
-      : "/konzultace"
-  }
-  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
->
-  Více informací
-</a>
-          </div>
-        ))}
+      <p className="mt-8 text-black/60 leading-relaxed max-w-sm">
+        {service.text}
+      </p>
+    </div>
+
+    <a
+      href={
+        index === 0
+          ? "/servis-kol"
+          : index === 1
+          ? "/stavby-kol"
+          : index === 2
+          ? "/vyzvednuti"
+          : "/konzultace"
+      }
+      className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+    >
+      Více informací
+    </a>
+  </div>
+))}
       </section>
 
       <section id="work" className="bg-black text-white px-8 py-24 md:px-16">
