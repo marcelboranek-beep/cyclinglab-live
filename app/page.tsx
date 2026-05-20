@@ -1,4 +1,3 @@
-
 export default function CustomCyclingLab() {
   const services = [
     {
@@ -31,13 +30,10 @@ export default function CustomCyclingLab() {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
 
         <header className="relative z-10 flex items-center justify-between px-8 py-8 md:px-16">
-  <Image
-    src="/logo-white.png"
-    alt="Custom Cycling Lab"
-    fill
-    className="object-contain"
-    priority
-  />
+<div>
+  <h1 className="text-4xl font-light tracking-wider">CCL</h1>
+  <p className="text-2xl font-light">Custom Cycling Lab</p>
+  <p className="text-sm tracking-[0.4em] mt-2">MARCEL BOŘÁNEK</p>
 </div>
           <nav className="hidden gap-10 text-sm uppercase tracking-[0.25em] md:flex">
             <a href="#services" className="hover:opacity-70 transition">
