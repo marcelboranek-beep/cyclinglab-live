@@ -29,14 +29,14 @@ export default function CustomCyclingLab() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
 
-        <header className="relative z-10 flex items-center justify-between px-2 py-8 md:px-6">
-  <div className="relative h-64 w-[768px] -ml-24">
-    <img
-      src="/logo-white.png"
-      alt="Custom Cycling Lab"
-      className="object-contain h-full w-full"
-    />
-  </div>
+<header className="relative z-10 flex items-center justify-between px-16 py-8">
+  <div className="relative h-64 w-[768px] ml-[-280px]">
+  <img
+    src="/logo-white.png"
+    alt="Custom Cycling Lab"
+    className="object-contain h-full w-full"
+  />
+</div>
           <nav className="hidden gap-10 text-sm uppercase tracking-[0.25em] md:flex">
             <a href="#services" className="hover:opacity-70 transition">
               Služby
@@ -53,7 +53,7 @@ export default function CustomCyclingLab() {
           </nav>
         </header>
 
-        <div className="relative z-10 flex h-[75vh] items-center px-8 md:px-16">
+        <div className="relative z-10 max-w-3xl px-16">
           <div className="max-w-2xl">
             <h2 className="text-5xl leading-tight md:text-7xl font-light">
               Radost z kola začíná
