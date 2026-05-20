@@ -99,33 +99,20 @@ export default function CustomCyclingLab() {
                 {service.text}
               </p>
             </div>
-
-            <button className="mt-12 text-sm uppercase tracking-[0.2em] border-b border-black pb-2 w-fit hover:opacity-60 transition">
 <a
-  href="/servis-kol"
+  href={
+    index === 0
+      ? "/servis-kol"
+      : index === 1
+      ? "/stavby-kol"
+      : index === 2
+      ? "/vyzvednuti"
+      : "/konzultace"
+  }
   className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
 >
   Více informací
 </a>
-<a
-  href="/stavby-kol"
-  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
->
-  Více informací
-</a>
-<a
-  href="/vyzvednuti"
-  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
->
-  Více informací
-</a>
-<a
-  href="/konzultace"
-  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
->
-  Více informací
-</a>
-            </button>
           </div>
         ))}
       </section>
