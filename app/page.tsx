@@ -101,7 +101,30 @@ export default function CustomCyclingLab() {
             </div>
 
             <button className="mt-12 text-sm uppercase tracking-[0.2em] border-b border-black pb-2 w-fit hover:opacity-60 transition">
-              Více informací
+<a
+  href="/servis-kol"
+  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+>
+  Více informací
+</a>
+<a
+  href="/stavby-kol"
+  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+>
+  Více informací
+</a>
+<a
+  href="/vyzvednuti"
+  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+>
+  Více informací
+</a>
+<a
+  href="/konzultace"
+  className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+>
+  Více informací
+</a>
             </button>
           </div>
         ))}
