@@ -39,8 +39,6 @@ export default function CustomCyclingLab() {
     priority
   />
 </div>
-          </div>
-
           <nav className="hidden gap-10 text-sm uppercase tracking-[0.25em] md:flex">
             <a href="#services" className="hover:opacity-70 transition">
               Služby
