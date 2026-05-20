@@ -30,7 +30,7 @@ export default function CustomCyclingLab() {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
 
         <header className="relative z-10 flex items-center justify-between px-8 py-8 md:px-16">
-<div className="relative h-24 w-80">
+<div className="relative h-32 w-96">
   <img
     src="/logo-white.png"
     alt="Custom Cycling Lab"
