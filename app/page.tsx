@@ -67,9 +67,12 @@ export default function CustomCyclingLab() {
               Kola stvořená pro tebe.
             </p>
 
-            <button className="mt-12 border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300">
-              Prozkoumat služby
-            </button>
+            <a
+  href="#services"
+  className="mt-12 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
+>
+  Prozkoumat služby
+</a>
           </div>
         </div>
       </section>
