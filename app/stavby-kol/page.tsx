@@ -123,7 +123,7 @@ export default function StavbyKol() {
 
               <p className="mt-4 text-black/70 leading-relaxed">
                 Společně nastavíme ideální konfiguraci
-                přesně podle tvého rozpočtu.Je jedno zda se jedná o silničku, gravela nebo enduro
+                přesně podle tvého rozpočtu.Je jedno zda se jedná o silničku, gravela nebo enduro.
               </p>
             </div>
 
@@ -155,7 +155,7 @@ export default function StavbyKol() {
             href="/o-mne"
             className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
           >
-            Kontaktovat
+            Kontakt
           </a>
 
         </div>
