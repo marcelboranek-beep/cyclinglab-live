@@ -131,9 +131,12 @@ export default function CustomCyclingLab() {
               má svůj příběh.
             </h2>
 
-            <button className="mt-12 border-b border-white pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition">
-              Zobrazit realizace
-            </button>
+            <a
+  href="/stavby-kol"
+  className="mt-12 inline-block border-b border-white pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition"
+>
+  Stavby kol
+</a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
