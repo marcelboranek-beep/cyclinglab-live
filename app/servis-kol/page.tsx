@@ -52,7 +52,7 @@ export default function ServisKol() {
             <p>
               Základ správného servisu je kvalitní nářadí, čisté prostředí
               a klidná hlava. Přesně takové prostředí jsem vytvořil, abych mohl
-              každému zákazníkovi předat dokonale servisované kolo.
+              každému zákazníkovi předat dokonale opravené kolo.
             </p>
 
             <p>
@@ -85,7 +85,7 @@ export default function ServisKol() {
               "Vyčistím středové i hlavové složení.",
               "Namažu uložení sedlovky v rámu.",
               "Vyměním brzdovou kapalinu.",
-              "Zkontroluji zapletená kola, ložiska i centrování.",
+              "Zkontroluji zapletená kola.",
               "Kolo kompletně složím a dotáhnu momentovým klíčem.",
               "Řetěz navoskuji a provedu finální testovací jízdu.",
               "Na závěr kolo vyleštím, aby vypadalo jako nové.",
@@ -167,11 +167,11 @@ export default function ServisKol() {
 
             <div className="border-t border-black pt-6">
               <h3 className="text-2xl font-light">
-                Hlavové složení
+                Výměna Hlavového složení
               </h3>
 
               <p className="mt-4 text-black/70">
-                500–1000,- dle typu kola
+                200–1000,- dle typu kola
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function ServisKol() {
           <h2 className="mt-8 text-4xl md:text-6xl font-light leading-tight">
             Potřebujete drobnou opravu
             <br />
-            nebo nové kolo v krabici?
+            nebo máte nové kolo v krabici?
           </h2>
 
           <p className="mt-10 text-lg leading-relaxed text-black/70">
