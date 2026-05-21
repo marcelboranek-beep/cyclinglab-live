@@ -41,7 +41,7 @@ export default function CustomCyclingLab() {
             <a href="#services" className="hover:opacity-70 transition">
               Služby
             </a>
-            <a href="#about" className="hover:opacity-70 transition">
+            <a href="/o-mne" className="hover:opacity-70 transition">
               O mně
             </a>
             <a href="/stavby-kol" className="hover:opacity-70 transition">
