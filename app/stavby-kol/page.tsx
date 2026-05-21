@@ -152,10 +152,11 @@ export default function StavbyKol() {
           </p>
 
           <a
-            href="/o-mne"
-            className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
-          >
-            Kontakt
+  href="/kontakt"
+  className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
+>
+  Kontakt
+
           </a>
 
         </div>
