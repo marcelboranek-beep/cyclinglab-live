@@ -33,7 +33,7 @@ export default function Konzultace() {
               </div>
 
               <h3 className="mt-4 text-2xl font-light">
-                Špatně tě funguje kolo?
+                Špatně ti funguje kolo?
               </h3>
 
               <p className="mt-4 text-black/70 leading-relaxed">
