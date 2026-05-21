@@ -188,9 +188,12 @@ export default function CustomCyclingLab() {
             Mým cílem je jediné — aby tvoje kolo fungovalo dokonale.
           </p>
 
-          <button className="mt-12 border-b border-black pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition">
-            Více o mně
-          </button>
+          <a
+  href="/o-mne"
+  className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
+>
+  Více o mně
+</a>
         </div>
       </section>
 
