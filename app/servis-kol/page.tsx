@@ -1,6 +1,13 @@
 export default function ServisKol() {
   return (
     <main className="min-h-screen bg-[#f5f4f1] text-black">
+      <a
+  href="/"
+  className="fixed top-8 left-8 z-50 flex items-center gap-3 text-sm uppercase tracking-[0.2em] hover:opacity-60 transition"
+>
+  <span className="text-2xl leading-none">←</span>
+  Zpět
+</a>
 
       {/* HERO */}
       <section className="border-b border-black/10 px-8 py-24 md:px-16">
