@@ -1,6 +1,13 @@
 export default function Kontakt() {
   return (
     <main className="min-h-screen bg-[#f5f4f1] text-black px-8 py-24 md:px-16">
+        <a
+  href="/"
+  className="fixed top-8 left-8 z-50 flex items-center gap-3 text-sm uppercase tracking-[0.2em] hover:opacity-60 transition"
+>
+  <span className="text-2xl leading-none">←</span>
+  Zpět
+</a>
       <div className="max-w-4xl mx-auto">
 
         <p className="uppercase tracking-[0.3em] text-sm text-black/40">
