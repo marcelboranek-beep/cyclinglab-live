@@ -30,7 +30,7 @@ export default function ServisKol() {
 
           <div>
             <img
-              src="/gallery-1.jpg"
+              src="/service-new.jpg"
               alt="Servis kol"
               className="w-full h-[700px] object-cover"
             />
