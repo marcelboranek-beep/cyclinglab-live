@@ -21,7 +21,7 @@ export default function Kontakt() {
         <div className="mt-16 space-y-8 text-lg text-black/70">
 
           <p>
-            Email: info@customcyclinglab.cz
+            Email: info@customcyclinglab.com
           </p>
 
           <p>
