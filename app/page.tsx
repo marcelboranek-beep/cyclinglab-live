@@ -230,7 +230,7 @@ export default function CustomCyclingLab() {
                 href="mailto:info@customcyclinglab.cz"
                 className="block hover:text-white transition"
               >
-                info@customcyclinglab.cz
+                info@customcyclinglab.com
               </a>
 
               <p>Podlešín, Česká republika</p>
