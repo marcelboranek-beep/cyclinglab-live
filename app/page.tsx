@@ -103,7 +103,7 @@ export default function CustomCyclingLab() {
       <AnimatedCounter target={295} suffix="+" />
     </div>
     <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
-      Individuálních staveb
+      kol na zakázku
     </div>
   </div>
 
