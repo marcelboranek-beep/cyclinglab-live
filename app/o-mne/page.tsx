@@ -27,7 +27,7 @@ export default function OMne() {
             </h1>
 
             <p className="mt-10 text-lg leading-relaxed text-black/70 max-w-xl">
-              Cyklistice se věnuji více než deset let. Specializuji se
+              Cyklistice se věnuji 18let, z toho posledních deset let stavím kola na míru. Specializuji se
               na individuální servis, stavby kol a osobní přístup
               ke každému zákazníkovi.
             </p>
@@ -60,7 +60,7 @@ export default function OMne() {
           <div className="mt-12 space-y-8 text-lg leading-relaxed text-black/70">
 
             <p>
-              Nejsem jen opravář kol. Jsem aktivní fanoušek moderních
+              Nedělám jen individuální stavby kol a servis. Jsem také aktivní fanoušek moderních
               cyklistických trendů a především aktivní cyklista,
               který rozumí tomu, co zákazník od svého kola očekává.
             </p>
