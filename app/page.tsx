@@ -1,3 +1,40 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+function AnimatedCounter({
+  target,
+  suffix = "",
+}: {
+  target: number;
+  suffix?: string;
+}) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+
+    const interval = setInterval(() => {
+      start += Math.ceil(target / 25);
+
+      if (start >= target) {
+        start = target;
+        clearInterval(interval);
+      }
+
+      setCount(start);
+    }, 40);
+
+    return () => clearInterval(interval);
+  }, [target]);
+
+  return (
+    <span>
+      {count}
+      {suffix}
+    </span>
+  );
+}
 export default function CustomCyclingLab() {
   const services = [
     {
@@ -62,38 +99,33 @@ export default function CustomCyclingLab() {
             </h2>
 <div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl">
   <div>
-    <div className="text-4xl md:text-6xl font-light text-white">
-      295+
+    <div className="text-3xl md:text-5xl font-light text-white">
+      <AnimatedCounter target={295} suffix="+" />
     </div>
-    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
       Individuálních staveb
     </div>
   </div>
 
   <div>
-    <div className="text-4xl md:text-6xl font-light text-white">
-      10+
+    <div className="text-3xl md:text-5xl font-light text-white">
+      <AnimatedCounter target={10} suffix="+" />
     </div>
-    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
       Let zkušeností
     </div>
   </div>
 
   <div>
-    <div className="text-4xl md:text-6xl font-light text-white">
-      100%
+    <div className="text-3xl md:text-5xl font-light text-white">
+     <AnimatedCounter target={100} suffix="%" />
     </div>
-    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
       Individuální přístup
     </div>
   </div>
 </div>
-            <p className="mt-10 max-w-xl text-lg leading-relaxed text-white/80">
-              Individuální přístup. Maximální preciznost.
-              <br />
-              Kola stvořená pro tebe.
-            </p>
-
+           
             <a
   href="#services"
   className="mt-12 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
