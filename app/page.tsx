@@ -60,7 +60,34 @@ export default function CustomCyclingLab() {
               <br />
               v detailech.
             </h2>
+<div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl">
+  <div>
+    <div className="text-4xl md:text-6xl font-light text-white">
+      295+
+    </div>
+    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+      Individuálních staveb
+    </div>
+  </div>
 
+  <div>
+    <div className="text-4xl md:text-6xl font-light text-white">
+      10+
+    </div>
+    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+      Let zkušeností
+    </div>
+  </div>
+
+  <div>
+    <div className="text-4xl md:text-6xl font-light text-white">
+      100%
+    </div>
+    <div className="mt-3 text-xs uppercase tracking-[0.3em] text-white/60">
+      Individuální přístup
+    </div>
+  </div>
+</div>
             <p className="mt-10 max-w-xl text-lg leading-relaxed text-white/80">
               Individuální přístup. Maximální preciznost.
               <br />
