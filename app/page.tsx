@@ -279,7 +279,13 @@ export default function CustomCyclingLab() {
 
 </div>
 
-    <form className="space-y-8">
+    <form
+  className="space-y-8"
+  onSubmit={(e) => {
+    e.preventDefault();
+    alert("Formulář byl odeslán");
+  }}
+>
 
       <input
         type="text"
