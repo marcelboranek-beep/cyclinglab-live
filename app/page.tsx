@@ -36,6 +36,34 @@ function AnimatedCounter({
   );
 }
 export default function CustomCyclingLab() {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      bikeType: formData.get("bikeType"),
+      deliveryMethod: formData.get("deliveryMethod"),
+      message: formData.get("message"),
+    }),
+  });
+
+  if (response.ok) {
+    alert("Poptávka byla úspěšně odeslána.");
+    form.reset();
+  } else {
+    alert("Nepodařilo se odeslat formulář.");
+  }
+};
   const services = [
     {
       title: "Individuální servis kol",
@@ -281,35 +309,33 @@ export default function CustomCyclingLab() {
 
     <form
   className="space-y-8"
-  onSubmit={(e) => {
-    e.preventDefault();
-    alert("Formulář byl odeslán");
-  }}
+  onSubmit={handleSubmit}
 >
+  
+      <input
+  name="name"
+  type="text"
+  placeholder="Jméno *"
+/>
 
       <input
-        type="text"
-        placeholder="Jméno *"
-        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
-      />
+  name="email"
+  type="email"
+  placeholder="E-mail *"
+/>
 
       <input
-        type="email"
-        placeholder="E-mail *"
-        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
-      />
-
-      <input
-        type="tel"
-        placeholder="Telefon *"
-        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none text-lg"
-      />
+  name="phone"
+  type="tel"
+  placeholder="Telefon *"
+/>
 
       <div className="relative">
         <select
-          className="w-full bg-transparent border-b border-white/20 pb-4 outline-none appearance-none text-white"
-          defaultValue=""
-        >
+  name="bikeType"
+  className="w-full ..."
+  defaultValue=""
+>
           <option value="" disabled>
             Jaké máte kolo?
           </option>
@@ -328,9 +354,10 @@ export default function CustomCyclingLab() {
 
       <div className="relative">
         <select
-          className="w-full bg-transparent border-b border-white/20 pb-4 outline-none appearance-none text-white"
-          defaultValue=""
-        >
+  name="deliveryMethod"
+  className="w-full ..."
+  defaultValue=""
+>
           <option value="" disabled>
             Jak chcete servis předat?
           </option>
@@ -344,10 +371,10 @@ export default function CustomCyclingLab() {
       </div>
 
       <textarea
-        rows={5}
-        placeholder="Dotaz / Popis servisu *"
-        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none resize-none"
-      />
+  name="message"
+  rows={5}
+  placeholder="Dotaz / Popis servisu *"
+/>
 
       <button
         type="submit"
