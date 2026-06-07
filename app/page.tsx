@@ -261,21 +261,23 @@ export default function CustomCyclingLab() {
 <section className="bg-black text-white py-32 px-8">
   <div className="max-w-4xl mx-auto">
 
-    <div className="mb-16">
-      <div className="text-xs uppercase tracking-[0.3em] text-white/50 mb-6">
-        OBJEDNÁVKA SERVISU
-      </div>
+    <div className="mb-10">
 
-      <h2 className="text-3xl md:text-5xl font-light leading-tight">
-        Potřebujete servis
-        <br />
-        nebo seřízení kola?
-      </h2>
+  <div className="text-xs uppercase tracking-[0.3em] text-white/50 mb-6">
+    OBJEDNÁVKA SERVISU
+  </div>
 
-      <p className="mt-6 text-white/60 max-w-xl">
-        Vyplňte formulář a ozvu se vám s návrhem termínu a rozsahu servisu.
-      </p>
-    </div>
+  <h2 className="text-3xl md:text-5xl font-light leading-tight">
+    Potřebujete servis
+    <br />
+    nebo seřízení kola?
+  </h2>
+
+  <p className="mt-6 text-white/60 max-w-xl">
+    Vyplňte formulář a ozvu se vám s návrhem termínu a rozsahu servisu.
+  </p>
+
+</div>
 
     <form className="space-y-8">
 
@@ -294,7 +296,7 @@ export default function CustomCyclingLab() {
       <input
         type="tel"
         placeholder="Telefon *"
-        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
+        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none text-lg"
       />
 
       <div className="relative">
@@ -330,7 +332,7 @@ export default function CustomCyclingLab() {
           <option>Chci vyzvednutí kola na adrese</option>
         </select>
 
-        <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+        <span className="absolute right-0 top-0 text-white/50 pointer-events-none text-lg">
           ↓
         </span>
       </div>
