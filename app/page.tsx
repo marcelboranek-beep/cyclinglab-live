@@ -258,7 +258,100 @@ export default function CustomCyclingLab() {
 </a>
         </div>
       </section>
+<section className="bg-black text-white py-32 px-8">
+  <div className="max-w-4xl mx-auto">
 
+    <div className="mb-16">
+      <div className="text-xs uppercase tracking-[0.3em] text-white/50 mb-6">
+        OBJEDNÁVKA SERVISU
+      </div>
+
+      <h2 className="text-3xl md:text-5xl font-light leading-tight">
+        Potřebujete servis
+        <br />
+        nebo seřízení kola?
+      </h2>
+
+      <p className="mt-6 text-white/60 max-w-xl">
+        Vyplňte formulář a ozvu se vám s návrhem termínu a rozsahu servisu.
+      </p>
+    </div>
+
+    <form className="space-y-8">
+
+      <input
+        type="text"
+        placeholder="Jméno *"
+        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
+      />
+
+      <input
+        type="email"
+        placeholder="E-mail *"
+        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
+      />
+
+      <input
+        type="tel"
+        placeholder="Telefon *"
+        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none"
+      />
+
+      <div className="relative">
+        <select
+          className="w-full bg-transparent border-b border-white/20 pb-4 outline-none appearance-none text-white"
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Jaké máte kolo?
+          </option>
+          <option>MTB</option>
+          <option>Silniční</option>
+          <option>Gravel</option>
+          <option>Treking</option>
+          <option>E-bike</option>
+          <option>Jiné</option>
+        </select>
+
+        <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+          ↓
+        </span>
+      </div>
+
+      <div className="relative">
+        <select
+          className="w-full bg-transparent border-b border-white/20 pb-4 outline-none appearance-none text-white"
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Jak chcete servis předat?
+          </option>
+          <option>Přivezu osobně</option>
+          <option>Chci vyzvednutí kola na adrese</option>
+        </select>
+
+        <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+          ↓
+        </span>
+      </div>
+
+      <textarea
+        rows={5}
+        placeholder="Dotaz / Popis servisu *"
+        className="w-full bg-transparent border-b border-white/20 pb-4 outline-none resize-none"
+      />
+
+      <button
+        type="submit"
+        className="border border-white px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition"
+      >
+        ODESLAT POPTÁVKU
+      </button>
+
+    </form>
+
+  </div>
+</section>
       <footer
         id="contact"
         className="bg-black text-white px-8 py-16 md:px-16"
