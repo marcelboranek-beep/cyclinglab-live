@@ -188,7 +188,6 @@ export default function ServisKol() {
 </a>
     </div>
   </div>
-    </div>
 </section>
       {/* EXTRA */}
       <section className="px-8 py-24 md:px-16 border-b border-black/10">
