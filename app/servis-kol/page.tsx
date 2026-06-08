@@ -149,8 +149,8 @@ export default function ServisKol() {
       </section>
 
 <section className="py-24 border-t border-black/10">
-  <div className="max-w-6xl mx-auto">
-    <div className="max-w-4xl mx-auto">
+  <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <p className="uppercase tracking-[0.3em] text-sm text-black/40">
         Nepotřebujete kompletní servis?
       </p>
