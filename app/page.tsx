@@ -286,7 +286,10 @@ export default function CustomCyclingLab() {
 </a>
         </div>
       </section>
-<section className="bg-black text-white py-32 px-8">
+<section
+  id="servis"
+  className="bg-black text-white py-32 px-8"
+>
   <div className="max-w-4xl mx-auto">
 
     <div className="mb-10">
