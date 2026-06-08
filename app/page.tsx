@@ -378,9 +378,9 @@ export default function CustomCyclingLab() {
     </option>
   </select>
 
-  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
-    ↓
-  </span>
+ <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
+  ⌄
+</span>
 </div>
 </div>
       <div className="relative">
