@@ -365,7 +365,7 @@ export default function CustomCyclingLab() {
   defaultValue=""
 >
   <option value="" disabled>
-    Jak chcete servis předat?
+    Jak chcete kolo předat?
   </option>
   <option>Přivezu osobně</option>
   <option>Chci vyzvednutí kola na adrese</option>
