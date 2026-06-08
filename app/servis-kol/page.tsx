@@ -148,9 +148,8 @@ export default function ServisKol() {
         </div>
       </section>
 
-<section className="pt-12 pb-24 border-t border-black/10">
+<section className="px-8 pt-12 pb-24 md:px-16 border-t border-black/10">
   <div className="max-w-5xl mx-auto">
-    <div className="max-w-5xl mx-auto">
       <p className="uppercase tracking-[0.3em] text-sm text-black/40">
         Základní servis
       </p>
