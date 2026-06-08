@@ -382,7 +382,7 @@ export default function CustomCyclingLab() {
     ↓
   </span>
 </div>
-
+</div>
       <div className="relative">
 
   <select
