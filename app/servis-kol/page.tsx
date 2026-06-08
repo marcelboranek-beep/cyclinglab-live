@@ -142,6 +142,41 @@ export default function ServisKol() {
         </div>
       </section>
 
+<section className="px-8 py-24 md:px-16 border-b border-black/10">
+  <div className="max-w-6xl mx-auto">
+    <div className="max-w-2xl">
+      <p className="uppercase tracking-[0.3em] text-sm text-black/40">
+        Nepotřebujete kompletní servis?
+      </p>
+
+      <h2 className="mt-6 text-5xl font-light">
+        Základní servis
+      </h2>
+
+      <div className="mt-6 text-6xl font-light">
+        1090,-
+      </div>
+
+      <p className="mt-8 text-lg text-black/70">
+        Kontrola a seřízení kola pro běžný provoz.
+      </p>
+
+      <ul className="mt-8 space-y-3 text-black/70">
+        <li>• seřízení řazení</li>
+        <li>• seřízení brzd</li>
+        <li>• dotažení důležitých spojů</li>
+        <li>• kontrola opotřebení komponentů</li>
+        <li>• kontrola tlaku a stavu plášťů</li>
+        <li>• vyčištění a namazání řetězu</li>
+      </ul>
+
+      <p className="mt-8 text-black/60">
+        Ideální pro kola, která jsou pravidelně servisována a
+        nepotřebují kompletní rozborku.
+      </p>
+    </div>
+  </div>
+</section>
       {/* EXTRA */}
       <section className="px-8 py-24 md:px-16 border-b border-black/10">
         <div className="max-w-6xl mx-auto">
