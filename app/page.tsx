@@ -357,7 +357,29 @@ export default function CustomCyclingLab() {
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
 ⌄
 </span>
+<div className="relative">
+  <select
+    name="serviceType"
+    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+    defaultValue=""
+  >
+    <option value="" disabled>
+      O jaký servis mám zájem?
+    </option>
+    <option value="Kompletní servis 2900 Kč">
+      Kompletní servis – 2900 Kč
+    </option>
+    <option value="Základní servis 1090 Kč">
+      Základní servis – 1090 Kč
+    </option>
+    <option value="Jiné">
+      Jiné
+    </option>
+  </select>
 
+  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+    ↓
+  </span>
 </div>
 
       <div className="relative">

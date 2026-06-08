@@ -13,6 +13,7 @@ export async function POST(req: Request) {
       email,
       phone,
       bikeType,
+      serviceType,
       deliveryMethod,
       message,
     } = body;
@@ -32,6 +33,7 @@ export async function POST(req: Request) {
 
         <p><strong>Typ kola:</strong> ${bikeType}</p>
         <p><strong>Způsob předání:</strong> ${deliveryMethod}</p>
+        <p><strong>Typ servisu:</strong> ${serviceType}</p>
 
         <hr>
 
