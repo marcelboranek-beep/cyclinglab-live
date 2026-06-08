@@ -381,7 +381,7 @@ export default function CustomCyclingLab() {
   name="message"
   rows={5}
   placeholder="Dotaz / Popis servisu *"
-  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none resize-none"
+  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
 />
  
 
