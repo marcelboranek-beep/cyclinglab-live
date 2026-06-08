@@ -358,7 +358,7 @@ export default function CustomCyclingLab() {
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
 ⌄
 </span>
-<div className="relative">
+<div className="relative mt-6">
   <select
     name="serviceType"
     className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
