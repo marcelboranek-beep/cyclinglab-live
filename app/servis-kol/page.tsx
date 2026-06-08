@@ -152,12 +152,8 @@ export default function ServisKol() {
   <div className="max-w-5xl mx-auto">
     <div className="max-w-5xl mx-auto">
       <p className="uppercase tracking-[0.3em] text-sm text-black/40">
-        Nepotřebujete kompletní servis?
-      </p>
-
-      <h2 className="mt-6 text-5xl font-light">
         Základní servis
-      </h2>
+      </p>
 
       <div className="mt-6 text-6xl font-light">
         1090,-
