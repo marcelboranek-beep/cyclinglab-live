@@ -131,15 +131,16 @@ export default function ServisKol() {
               </h2>
 
               <p className="mt-6 text-lg leading-relaxed text-black/70 max-w-xl">
-            <a
+           
+                Po předchozí rezervaci je možné vše zvládnout během jednoho dne,
+                abyste byli co nejdříve zpět v sedle.
+              </p>
+<a
   href="/#servis"
   className="mt-10 inline-block border border-black px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-black hover:text-white transition"
 >
   Objednat servis
 </a>
-                Po předchozí rezervaci je možné vše zvládnout během jednoho dne,
-                abyste byli co nejdříve zpět v sedle.
-              </p>
             </div>
 
           </div>
