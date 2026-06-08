@@ -148,17 +148,16 @@ export default function ServisKol() {
         </div>
       </section>
 
-<section className="py-24 border-t border-black/10">
+<section className="pt-12 pb-24 border-t border-black/10">
   <div className="max-w-5xl mx-auto">
     <div className="max-w-5xl mx-auto">
       <p className="uppercase tracking-[0.3em] text-sm text-black/40">
         Základní servis
       </p>
 
-      <div className="mt-6 text-6xl font-light">
-        1090,-
-      </div>
-
+<div className="mt-6 text-5xl md:text-6xl font-light">
+  1090,-
+</div>
       <p className="mt-8 text-lg text-black/70">
         Kontrola a seřízení kola pro běžný provoz.
       </p>
