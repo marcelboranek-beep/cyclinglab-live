@@ -361,11 +361,12 @@ export default function CustomCyclingLab() {
   className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
   defaultValue=""
 >
-    ...
-    <option value="" disabled>
-  Jak chcete servis předat?
-</option>
-  </select>
+  <option value="" disabled>
+    Jak chcete servis předat?
+  </option>
+  <option>Přivezu osobně</option>
+  <option>Chci vyzvednutí kola na adrese</option>
+</select>
 
   <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
     ↓
