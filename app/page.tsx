@@ -337,13 +337,12 @@ export default function CustomCyclingLab() {
   className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
 />
 
-      <div className="relative">
-
+<div className="relative">
   <select
-  name="bikeType"
-  className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
-  defaultValue=""
->
+    name="bikeType"
+    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+    defaultValue=""
+  >
     <option value="" disabled>
       Jaké máte kolo?
     </option>
@@ -356,8 +355,9 @@ export default function CustomCyclingLab() {
   </select>
 
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-⌄
-</span>
+    ⌄
+  </span>
+</div>
 <div className="relative mt-6">
   <select
     name="serviceType"
@@ -378,10 +378,9 @@ export default function CustomCyclingLab() {
     </option>
   </select>
 
- <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-  ⌄
-</span>
-</div>
+  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
+    ⌄
+  </span>
 </div>
       <div className="relative">
 
@@ -398,8 +397,8 @@ export default function CustomCyclingLab() {
 </select>
 
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-    ⌄
-  </span>
+  ⌄
+</span>
 
 </div>
 
