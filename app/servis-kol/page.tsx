@@ -148,7 +148,7 @@ export default function ServisKol() {
         </div>
       </section>
 
-<section className="px-8 py-24 md:px-16 border-b border-black/10">
+<section className="py-24 border-t border-black/10">
   <div className="max-w-6xl mx-auto">
     <div className="max-w-2xl">
       <p className="uppercase tracking-[0.3em] text-sm text-black/40">
@@ -188,6 +188,7 @@ export default function ServisKol() {
 </a>
     </div>
   </div>
+    </div>
 </section>
       {/* EXTRA */}
       <section className="px-8 py-24 md:px-16 border-b border-black/10">
