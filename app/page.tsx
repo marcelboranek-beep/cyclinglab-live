@@ -333,10 +333,10 @@ export default function CustomCyclingLab() {
       <div className="relative">
 
   <select
-    name="bikeType"
-    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none"
-    defaultValue=""
-  >
+  name="bikeType"
+  className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+  defaultValue=""
+>
     <option value="" disabled>
       Jaké máte kolo?
     </option>
@@ -357,11 +357,14 @@ export default function CustomCyclingLab() {
       <div className="relative">
 
   <select
-    name="deliveryMethod"
-    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none"
-    defaultValue=""
-  >
+  name="deliveryMethod"
+  className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+  defaultValue=""
+>
     ...
+    <option value="" disabled>
+  Jak chcete servis předat?
+</option>
   </select>
 
   <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
