@@ -351,9 +351,9 @@ export default function CustomCyclingLab() {
     <option>Jiné</option>
   </select>
 
-  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
-    ↓
-  </span>
+  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
+⌄
+</span>
 
 </div>
 
@@ -361,7 +361,7 @@ export default function CustomCyclingLab() {
 
   <select
   name="deliveryMethod"
-  className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+  className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
   defaultValue=""
 >
   <option value="" disabled>
@@ -371,8 +371,8 @@ export default function CustomCyclingLab() {
   <option>Chci vyzvednutí kola na adrese</option>
 </select>
 
-  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
-    ↓
+  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
+    ⌄
   </span>
 
 </div>
@@ -381,7 +381,7 @@ export default function CustomCyclingLab() {
   name="message"
   rows={5}
   placeholder="Dotaz / Popis servisu *"
-  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
+  className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
 />
  
 
