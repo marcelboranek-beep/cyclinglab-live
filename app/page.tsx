@@ -311,7 +311,7 @@ export default function CustomCyclingLab() {
   className="space-y-8"
   onSubmit={handleSubmit}
 >
-  
+
       <input
   name="name"
   type="text"
@@ -331,57 +331,50 @@ export default function CustomCyclingLab() {
 />
 
       <div className="relative">
-        <select
-  name="bikeType"
-  className="w-full ..."
-  defaultValue=""
->
-          <option value="" disabled>
-            Jaké máte kolo?
-          </option>
-          <option>MTB</option>
-          <option>Silniční</option>
-          <option>Gravel</option>
-          <option>Treking</option>
-          <option>E-bike</option>
-          <option>Jiné</option>
-        </select>
-
-        <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
-          ↓
-        </span>
-      </div>
+  <select
+    name="bikeType"
+    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none [-webkit-appearance:none]"
+  >
+    <option value="" disabled>
+      Jaké máte kolo?
+    </option>
+    <option>MTB</option>
+    <option>Silniční</option>
+    <option>Gravel</option>
+    <option>Treking</option>
+    <option>E-bike</option>
+    <option>Jiné</option>
+  </select>
+</div>
 
       <div className="relative">
-        <select
-  name="deliveryMethod"
-  className="w-full ..."
-  defaultValue=""
->
-          <option value="" disabled>
-            Jak chcete servis předat?
-          </option>
-          <option>Přivezu osobně</option>
-          <option>Chci vyzvednutí kola na adrese</option>
-        </select>
-
-        <span className="absolute right-0 top-0 text-white/50 pointer-events-none text-lg">
-          ↓
-        </span>
-      </div>
-
+  <select
+    name="deliveryMethod"
+   className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none [-webkit-appearance:none]"
+    defaultValue=""
+  >
+    <option value="" disabled>
+      Jak chcete servis předat?
+    </option>
+    <option>Přivezu osobně</option>
+    <option>Chci vyzvednutí kola na adrese</option>
+  </select>
+</div>
       <textarea
   name="message"
   rows={5}
   placeholder="Dotaz / Popis servisu *"
+  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none resize-none"
 />
+ 
+/
 
       <button
-        type="submit"
-        className="border border-white px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition"
-      >
-        ODESLAT POPTÁVKU
-      </button>
+  type="submit"
+  className="mt-10 border border-white px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
+>
+  Odeslat poptávku
+</button>
 
     </form>
 
