@@ -52,6 +52,7 @@ export default function CustomCyclingLab() {
       email: formData.get("email"),
       phone: formData.get("phone"),
       bikeType: formData.get("bikeType"),
+      serviceType: formData.get("serviceType"),
       deliveryMethod: formData.get("deliveryMethod"),
       message: formData.get("message"),
     }),
