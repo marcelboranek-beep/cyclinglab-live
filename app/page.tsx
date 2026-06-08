@@ -316,18 +316,21 @@ export default function CustomCyclingLab() {
   name="name"
   type="text"
   placeholder="Jméno *"
+  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
 />
 
       <input
   name="email"
   type="email"
   placeholder="E-mail *"
+  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
 />
 
       <input
   name="phone"
   type="tel"
   placeholder="Telefon *"
+  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
 />
 
       <div className="relative">
