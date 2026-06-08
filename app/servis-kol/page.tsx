@@ -170,18 +170,18 @@ export default function ServisKol() {
         <li>• vyčištění a namazání řetězu</li>
       </ul>
 
-      <p className="mt-8 text-black/60">
-        Ideální pro kola, která jsou pravidelně servisována a
-        nepotřebují kompletní rozborku.
-      </p>
+ <p className="mt-8 text-black/60">
+  Ideální pro kola, která jsou pravidelně servisována a
+  nepotřebují kompletní rozborku.
+</p>
+
 <a
   href="/#servis"
   className="mt-10 inline-block border border-black px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-black hover:text-white transition"
 >
   Objednat servis
 </a>
-    </div>
-  </div>
+</div>
 </section>
       {/* EXTRA */}
       <section className="px-8 py-24 md:px-16 border-b border-black/10">
