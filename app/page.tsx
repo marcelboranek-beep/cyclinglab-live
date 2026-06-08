@@ -331,9 +331,11 @@ export default function CustomCyclingLab() {
 />
 
       <div className="relative">
+
   <select
     name="bikeType"
-    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none [-webkit-appearance:none]"
+    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none"
+    defaultValue=""
   >
     <option value="" disabled>
       Jaké máte kolo?
@@ -345,21 +347,29 @@ export default function CustomCyclingLab() {
     <option>E-bike</option>
     <option>Jiné</option>
   </select>
+
+  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+    ↓
+  </span>
+
 </div>
 
       <div className="relative">
+
   <select
     name="deliveryMethod"
-   className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none [-webkit-appearance:none]"
+    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none"
     defaultValue=""
   >
-    <option value="" disabled>
-      Jak chcete servis předat?
-    </option>
-    <option>Přivezu osobně</option>
-    <option>Chci vyzvednutí kola na adrese</option>
+    ...
   </select>
+
+  <span className="absolute right-0 top-0 text-white/50 pointer-events-none">
+    ↓
+  </span>
+
 </div>
+
       <textarea
   name="message"
   rows={5}
@@ -367,7 +377,6 @@ export default function CustomCyclingLab() {
   className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none resize-none"
 />
  
-/
 
       <button
   type="submit"
