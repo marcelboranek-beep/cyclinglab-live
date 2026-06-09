@@ -340,7 +340,7 @@ export default function CustomCyclingLab() {
 <div className="relative">
   <select
     name="bikeType"
-    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+    className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
     defaultValue=""
   >
     <option value="" disabled>
@@ -361,7 +361,7 @@ export default function CustomCyclingLab() {
 <div className="relative mt-6">
   <select
     name="serviceType"
-    className="w-full bg-transparent text-white border-b border-white/20 pb-4 outline-none appearance-none"
+    className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
     defaultValue=""
   >
     <option value="" disabled>
