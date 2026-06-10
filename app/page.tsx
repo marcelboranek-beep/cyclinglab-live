@@ -2,6 +2,12 @@
 
 import { useEffect, useState } from "react";
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 function AnimatedCounter({
   target,
   suffix = "",
@@ -59,9 +65,17 @@ export default function CustomCyclingLab() {
   });
 
   if (response.ok) {
-    alert("Poptávka byla úspěšně odeslána.");
-    form.reset();
-  } else {
+
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "conversion", {
+      send_to: "AW-18220669308/inX7CMinv7wcEPyypfBD",
+    });
+  }
+
+  alert("Poptávka byla úspěšně odeslána.");
+  form.reset();
+
+} else {
     alert("Nepodařilo se odeslat formulář.");
   }
 };
