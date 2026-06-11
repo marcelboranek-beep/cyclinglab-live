@@ -431,6 +431,12 @@ export default function CustomCyclingLab() {
 >
   Odeslat poptávku
 </button>
+<p className="mt-3 text-xs text-white/40">
+  Odesláním formuláře berete na vědomí zpracování osobních údajů.
+  <Link href="/gdpr" className="underline ml-1">
+    Více informací
+  </Link>
+</p>
 
     </form>
 
