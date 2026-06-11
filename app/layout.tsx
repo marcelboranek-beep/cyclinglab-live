@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import CookieBanner from "./components/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,19 +33,29 @@ export default function RootLayout({
   {children}
 
   <Script
-    src="https://www.googletagmanager.com/gtag/js?id=AW-18220669308"
-    strategy="afterInteractive"
-  />
+  src="https://www.googletagmanager.com/gtag/js?id=AW-18220669308"
+  strategy="afterInteractive"
+/>
 
-  <Script id="google-ads" strategy="afterInteractive">
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<Script id="google-consent" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
 
-      gtag('config', 'AW-18220669308');
-    `}
-  </Script>
+    gtag('js', new Date());
+
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
+
+    gtag('config', 'AW-18220669308');
+  `}
+</Script>
+<CookieBanner />
 </body>
     </html>
   );
