@@ -504,10 +504,21 @@ export default function CustomCyclingLab() {
         <div className="mt-20 border-t border-white/10 pt-8 text-sm text-white/40 flex flex-col md:flex-row justify-between gap-4">
           <p>© 2025 Custom Cycling Lab</p>
 
-          <div className="flex gap-6">
-            <a href="#">Zásady ochrany osobních údajů</a>
-            <a href="#">Cookies</a>
-          </div>
+         <div className="flex gap-6">
+  <Link
+    href="/gdpr"
+    className="underline cursor-pointer hover:text-white"
+  >
+    Zásady ochrany osobních údajů
+  </Link>
+
+  <Link
+    href="/cookies"
+    className="underline cursor-pointer hover:text-white"
+  >
+    Cookies
+  </Link>
+</div>
         </div>
       </footer>
     </main>
