@@ -92,7 +92,7 @@ export default function Vyzvednuti() {
 
             <p className="text-lg text-black/70 leading-relaxed">
               Cena je počítána podle vzdálenosti
-              od servisu v Podlešíně.
+              od místa servisu.
             </p>
 
             <div className="border-t border-black pt-8">
@@ -101,7 +101,7 @@ export default function Vyzvednuti() {
               </div>
 
               <div className="mt-4 text-5xl md:text-7xl font-light">
-                6 Kč / km
+                6 Kč / km  POZOR - Počítáme pouze cenu za jednu cestu!
               </div>
             </div>
 
