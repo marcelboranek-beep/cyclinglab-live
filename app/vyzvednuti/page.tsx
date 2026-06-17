@@ -101,7 +101,8 @@ export default function Vyzvednuti() {
               </div>
 
               <div className="mt-4 text-5xl md:text-7xl font-light">
-                6 Kč / km  POZOR - Počítáme pouze cenu za jednu cestu!
+                6 Kč / km  
+                POZOR - Počítáme pouze cenu za jednu cestu!
               </div>
             </div>
 
