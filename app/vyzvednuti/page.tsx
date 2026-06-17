@@ -136,11 +136,11 @@ export default function Vyzvednuti() {
           </p>
 
           <a
-            href="/kontakt"
-            className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
-          >
-            Kontakt
-          </a>
+  href="/kontakt#formular"
+  className="mt-12 inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-white transition hover:bg-neutral-800"
+>
+  Vyplnit formulář
+</a>
 
         </div>
       </section>
