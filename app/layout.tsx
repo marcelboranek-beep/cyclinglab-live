@@ -55,7 +55,7 @@ export default function RootLayout({
     gtag('config', 'AW-18220669308');
   `}
 </Script>
-<CookieBanner />
+{/* <CookieBanner /> */}
 </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Header from "./components/Header";
 
 declare global {
   interface Window {
@@ -43,6 +44,7 @@ function AnimatedCounter({
   );
 }
 export default function CustomCyclingLab() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
@@ -101,38 +103,16 @@ export default function CustomCyclingLab() {
 
   return (
     <main className="bg-[#f5f4f1] text-black min-h-screen font-sans">
+      <Header />
       <section className="relative h-screen overflow-hidden bg-black text-white">
         <img
-          src="/hero-bike.jpg"
-          alt="Custom Cycling Lab"
-          className="absolute inset-0 h-full w-full object-cover opacity-90"
-        />
+  src="/hero-bike.jpg"
+  alt="Custom Cycling Lab"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
+<div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent pointer-events-none"></div>
 
-<header className="relative z-10 flex items-center justify-between px-6 md:px-16 py-8">
-  <div className="relative h-64 w-[768px] ml-0 md:ml-[-180px]">
-  <img
-    src="/logo-white.png"
-    alt="Custom Cycling Lab"
-    className="object-contain h-full w-full"
-  />
-</div>
-          <nav className="hidden gap-10 text-sm uppercase tracking-[0.25em] md:flex">
-            <a href="#services" className="hover:opacity-70 transition">
-              Služby
-            </a>
-            <a href="/o-mne" className="hover:opacity-70 transition">
-              O mně
-            </a>
-            <a href="/stavby-kol" className="hover:opacity-70 transition">
-              Stavby kol
-            </a>
-            <a href="/kontakt" className="hover:opacity-70 transition">
-              Kontakt
-            </a>
-          </nav>
-        </header>
 
         <div className="relative z-10 max-w-3xl px-16">
           <div className="max-w-2xl">
