@@ -114,7 +114,7 @@ export default function CustomCyclingLab() {
 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent pointer-events-none"></div>
 
 
-        <div className="relative z-10 max-w-3xl px-16">
+        <div className="relative z-10 max-w-3xl px-16 pt-40">
           <div className="max-w-2xl">
             <h2 className="text-5xl leading-tight md:text-7xl font-light">
               Radost z kola začíná

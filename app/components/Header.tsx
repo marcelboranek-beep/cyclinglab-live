@@ -1,103 +1,82 @@
 "use client";
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+
+const links = [
+  { href: "/", label: "Domů" },
+  { href: "/o-mne", label: "O mně" },
+  { href: "/stavby-kol", label: "Stavby kol" },
+  { href: "/kontakt", label: "Kontakt" },
+];
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+ 
 
+const [showHeader, setShowHeader] = useState(true);
+
+useEffect(() => {
+  let lastScrollY = 0;
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < 50) {
+      setShowHeader(true);
+    } else if (currentScrollY > lastScrollY) {
+      // rolování dolů
+      setShowHeader(false);
+    } else {
+      // rolování nahoru
+      setShowHeader(true);
+    }
+
+    lastScrollY = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   return (
-    <>
-      <header className="fixed top-0 left-0 w-full z-[99999] flex items-center justify-between px-6 md:px-16 py-8">
-
+   <header
+  className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+    showHeader ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <div className="relative h-64 w-[768px] ml-0 md:ml-[-180px]">
-          <img
+       <Link href="/" className="relative block h-24 w-80 md:h-40 md:w-[650px]">
+          <Image
             src="/logo-white.png"
             alt="Custom Cycling Lab"
-            className="object-contain h-full w-full"
+            fill
+            priority
+            className="object-contain object-left"
           />
-        </div>
+        </Link>
 
         {/* Desktop menu */}
-        <nav className="hidden md:flex gap-10 text-sm uppercase tracking-[0.25em]">
-
-          <Link href="#services" className="hover:opacity-70 transition">
-            Služby
-          </Link>
-
-          <Link href="/o-mne" className="hover:opacity-70 transition">
-            O mně
-          </Link>
-
-          <Link href="/stavby-kol" className="hover:opacity-70 transition">
-            Stavby kol
-          </Link>
-
-          <Link href="/kontakt" className="hover:opacity-70 transition">
-            Kontakt
-          </Link>
-
+        <nav className="hidden md:flex items-center gap-10 uppercase tracking-[0.18em] text-sm text-white">
+          {links.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="hover:text-white/70 transition"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
-        {/* Hamburger */}
-        <button
-  onClick={() => alert("funguje")}
-  style={{
-    position: "fixed",
-    top: "20px",
-    right: "20px",
-    zIndex: 999999,
-    width: "100px",
-    height: "100px",
-    background: "red",
-    color: "white",
-    fontSize: "20px",
-  }}
->
-  TEST
-</button>
-
-      </header>
-
-      {/* Mobile menu */}
-      <div
-        className={`fixed inset-0 bg-black text-white z-[9999] transition-all duration-300 ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-8">
-
-          <button
-            onClick={() => setOpen(false)}
-            className="text-4xl"
-          >
-            ✕
-          </button>
-
-        </div>
-
-        <nav className="flex flex-col items-center gap-10 mt-20 text-3xl uppercase tracking-[0.2em]">
-
-          <Link href="/" onClick={() => setOpen(false)}>
-            Domů
-          </Link>
-
-          <Link href="/o-mne" onClick={() => setOpen(false)}>
-            O mně
-          </Link>
-
-          <Link href="/stavby-kol" onClick={() => setOpen(false)}>
-            Stavby kol
-          </Link>
-
-          <Link href="/kontakt" onClick={() => setOpen(false)}>
-            Kontakt
-          </Link>
-
-        </nav>
-
+        {/* Mobil */}
+        <Link
+          href="/kontakt"
+          className="md:hidden border border-white px-4 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
+        >
+          Kontakt
+        </Link>
       </div>
-    </>
+    </header>
   );
 }
