@@ -7,6 +7,7 @@ const links = [
   { href: "/", label: "Domů" },
   { href: "/o-mne", label: "O mně" },
   { href: "/stavby-kol", label: "Stavby kol" },
+  { href: "/ccl-rent", label: "CCL Rent" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 
@@ -70,12 +71,15 @@ useEffect(() => {
         </nav>
 
         {/* Mobil */}
+        <div className="md:hidden flex items-center gap-4">
+        <Link href="/ccl-rent" className="text-xs uppercase tracking-[0.2em] text-white whitespace-nowrap">CCL Rent</Link>
         <Link
           href="/kontakt"
           className="md:hidden border border-white px-4 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
         >
           Kontakt
         </Link>
+        </div>
       </div>
     </header>
   );
