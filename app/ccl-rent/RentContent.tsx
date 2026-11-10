@@ -68,7 +68,7 @@ export default function RentContent({ enabled }: { enabled: boolean }) {
       <div className={s.heroCopy}><div className={s.eyebrow}>CCL Rent</div><h1>Za zážitky.<br />S vlastním<br />kolem.</h1><p>Půjč si vybavení na cestu autem i letadlem. O tvoje kolo se postarám i před odletem.</p><button className={s.button} onClick={() => scrollTo("rent-products")}>Vybrat vybavení</button></div>
     </section>
     <div className={s.content}>
-      <div className={s.eyebrow}>Půjčovna / Podlešín</div><h2 className={s.heading} id="rent-products" style={{ scrollMarginTop: 110 }}>Dvě cesty. Stejná radost z kola.</h2>
+      <div className={s.eyebrow}>Půjčovna</div><h2 className={s.heading} id="rent-products" style={{ scrollMarginTop: 110 }}>Dvě cesty. Stejná radost z kola.</h2>
       <div className={s.products}>
         {(["evoc", "thule"] as const).map((id, index) => <article className={s.product} key={id} data-reveal>
           <div className={`${s.photo} ${id === "evoc" ? s.evoc : ""}`}><Image src={`/rent/${id}.jpg`} alt={products[id].name} fill sizes="(max-width:650px) 100vw, 50vw" /></div>
