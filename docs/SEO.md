@@ -11,7 +11,7 @@
 
 ## Search Console
 
-Majitel se přihlásil do Google Search Console účtem info@customcyclinglab.com. Byla přidána URL-prefix služba https://www.customcyclinglab.com/ a do webu vložena veřejná HTML ověřovací značka vydaná tímto účtem. Dokončení ověření a odeslání sitemap ještě čeká na zveřejnění značky.
+Majitel se přihlásil do Google Search Console účtem info@customcyclinglab.com. Byla přidána URL-prefix služba https://www.customcyclinglab.com/ a do webu vložena veřejná HTML ověřovací značka vydaná tímto účtem. Vlastnictví bylo úspěšně ověřeno metodou Značka HTML. Sitemap /sitemap.xml má stav Úspěšné a 13 objevených stránek. U /pece-o-retez a /keramicka-ochrana-kola bylo úspěšně požádáno o indexování; Google je zařadil do prioritní fronty procházení. To není potvrzení dokončené indexace.
 
 1. Přihlásit vlastní Google účet do https://search.google.com/search-console.
 2. Nejjednodušší pro současné nasazení je URL-prefix https://www.customcyclinglab.com/ a ověření značkou HTML. Doménová služba je širší a vyžaduje DNS.
@@ -21,6 +21,9 @@ Majitel se přihlásil do Google Search Console účtem info@customcyclinglab.co
 6. Po shromáždění dat sledovat dotazy, zobrazení, prokliky, indexaci a Core Web Vitals. Další změny mají vycházet ze skutečných dat.
 
 ## Firemní profil
+
+Existující profil byl nalezen v účtu majitele; nevznikl duplicitní profil. Potvrzena adresa, telefon, hlavní doména a sociální profil. Aktualizovaný popis včetně Dynamic a KORREK TFC byl přijat. Byl odeslán atribut „Musíte být objednáni“; při poslední kontrole čekal na zpracování. Majitel potvrdil Po–So 8:00–19:00, neděle zavřeno, návštěvy po předchozí domluvě. Tato doba je i na webu a ve strukturovaných datech.
+
 Před zakládáním nového profilu ověřit, zda už existuje. Název, adresa, telefon, web a skutečná dostupnost mají odpovídat dílně. Ověření firmy provádí majitel podle postupu Google; neuvádět falešné otevírací hodiny ani recenze.
 
 ## Ověření změn
