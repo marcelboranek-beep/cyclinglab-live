@@ -53,7 +53,7 @@ export default function Footer() {
           </p>
 
           <div className="mt-6 space-y-3 text-white/80">
-            <p>Otevřeno dle telefonické domluvy</p>
+            <p>Po–So: 8:00–19:00</p><p>Neděle zavřeno</p><p>Návštěvy po předchozí domluvě</p>
           </div>
         </div>
 
