@@ -152,11 +152,11 @@ export default function CenikPage() {
               <article className="package bundle">
                 <div className="eyebrow">Výhodný balíček</div>
                 <h3>Komplet pro fajnšmekry</h3>
-                <p>Kompletní servis kola, keramická ochrana KORREK TFC a voskování řetězu v horké lázni Dynamic.</p>
-                <p className="bundle-original">Součet jednotlivých služeb: <s>5 240 Kč</s></p>
+                <p>Kompletní servis kola, keramická ochrana KORREK TFC, ultrazvukové čištění řetězu a voskování řetězu v horké lázni Dynamic.</p>
+                <p className="bundle-original">Součet jednotlivých služeb: <s>5 540 Kč</s></p>
                 <p className="price">5 000 Kč</p>
-                <p className="bundle-saving">Ušetříš 240 Kč</p>
-                <p className="note">Keramická ochrana zahrnuje dekontaminaci laku a u lesklého laku také rozleštění jemných škrábanců leštičkou. Vosk Dynamic je v ceně.</p>
+                <p className="bundle-saving">Ušetříš 540 Kč</p>
+                <p className="note">Keramická ochrana zahrnuje dekontaminaci laku a u lesklého laku také rozleštění jemných škrábanců leštičkou. Součástí balíčku je ultrazvukové čištění řetězu a horké voskování řetězu.</p>
                 <a className="btn" href="/#servis">OBJEDNAT KOMPLET ↗</a>
               </article>
             </div>
