@@ -73,7 +73,7 @@ export default function Kontakt() {
               <br />
               273 25 Podlešín
             </address>
-            <p className="mt-5 text-black/70">Po–So: 8:00–19:00 · Neděle zavřeno. Návštěvy po předchozí domluvě.</p>
+            <p className="mt-5 text-black/70">Po–So: 8:00–19:00 · Neděle zavřeno. Občas jsem místo v dílně na kole. Před návštěvou mi proto prosím zavolej.</p>
             <p className="mt-5 text-black/70">
               Návštěvu, vyzvednutí i vrácení kola si prosím domluv předem
               telefonicky nebo pomocí servisního formuláře.
