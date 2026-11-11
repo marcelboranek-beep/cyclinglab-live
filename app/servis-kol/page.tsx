@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/servis-kol",
-  "Servis kol | Custom Cycling Lab",
-  "Individuální servis kol, kontrola a seřízení i kompletní péče. Přehled servisních balíčků a objednání v Custom Cycling Lab.",
+  "Servis kol Podlešín, Slaný a okolí | Custom Cycling Lab",
+  "Individuální servis silničních, gravelových i horských kol v Podlešíně u Slaného. Pro jezdce z Kladna a okolí, se svozem kola po domluvě.",
 );
 
 export default function ServisKol() {
@@ -20,7 +21,7 @@ export default function ServisKol() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <p className="uppercase tracking-[0.3em] text-sm text-black/40">
-                Individuální servis
+                Individuální servis kol · Podlešín u Slaného
               </p>
 
               <h1 className="mt-6 text-5xl md:text-7xl font-light leading-tight">
@@ -41,7 +42,10 @@ export default function ServisKol() {
             </div>
 
             <div>
-              <img
+              <Image
+                width={3616}
+                height={4024}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 src="/service-new.jpg"
                 alt="Servis kol"
                 className="w-full h-[700px] object-cover"
@@ -50,6 +54,30 @@ export default function ServisKol() {
           </div>
         </section>
 
+        <section className="px-8 py-12 md:px-16 border-b border-black/10">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-light">
+              Servis kol pro Podlešín, Slaný, Kladno a okolí
+            </h2>
+            <p className="mt-5 text-black/70">
+              Dílna je v Podlešíně 161/1. O kolo se postarám individuálně, od
+              diagnostiky a domluvy rozsahu až po testovací jízdu. Pokud nemáš
+              čas přijet, domluvíme{" "}
+              <a href="/vyzvednuti" className="underline">
+                vyzvednutí a vrácení kola
+              </a>
+              .
+            </p>
+            <div className="mt-6 flex flex-wrap gap-6">
+              <a href="/pece-o-retez" className="underline">
+                Čištění a horké voskování řetězu
+              </a>
+              <a href="/keramicka-ochrana-kola" className="underline">
+                Keramická ochrana KORREK TFC
+              </a>
+            </div>
+          </div>
+        </section>
         {/* TEXT */}
         <section className="px-8 py-24 md:px-16 border-b border-black/10">
           <div className="max-w-5xl mx-auto">

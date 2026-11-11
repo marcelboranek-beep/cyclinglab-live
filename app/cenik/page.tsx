@@ -7,8 +7,8 @@ import "./cenik.css";
 
 export const metadata: Metadata = pageMetadata(
   "/cenik",
-  "Ceník servisu kol | Custom Cycling Lab",
-  "Servisní balíčky, péče o řetěz Dynamic a keramická ochrana KORREK TFC. Kompletní nabídka a ceny Custom Cycling Lab.",
+  "Ceník servisu kol v Podlešíně | Custom Cycling Lab",
+  "Ceník servisu kol: základní servis 1 090 Kč, kompletní 2 900 Kč, péče o řetěz 650 Kč. Dílna v Podlešíně u Slaného. Objednání po domluvě.",
 );
 
 export default function CenikPage() {
@@ -95,6 +95,15 @@ export default function CenikPage() {
                 </p>
               </div>
             </div>
+            <p className="mt-7 text-sm">
+              <a href="/pece-o-retez" className="underline">
+                Podrobnosti k čištění a voskování řetězu
+              </a>{" "}
+              ·{" "}
+              <a href="/keramicka-ochrana-kola" className="underline">
+                Podrobnosti ke keramické ochraně
+              </a>
+            </p>
             <a className="btn" href="/#servis">
               POPTAT PÉČI ↗
             </a>

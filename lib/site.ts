@@ -18,6 +18,12 @@ export function pageMetadata(
     title,
     description,
     alternates: { canonical: site.origin + path },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [site.origin + "/hero-bike.jpg"],
+    },
     openGraph: {
       title,
       description,

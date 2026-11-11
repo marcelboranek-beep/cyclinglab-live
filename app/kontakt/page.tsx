@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const metadata = pageMetadata(
   "/kontakt",
-  "Kontakt a dílna | Custom Cycling Lab",
-  "Kontakt na Marcela Bořánka. Dílna Podlešín 161/1, 273 25 Podlešín. Telefon +420 777 732 309. Předání kola po domluvě.",
+  "Cykloservis Podlešín 161/1: kontakt | Custom Cycling Lab",
+  "Dílna Custom Cycling Lab, Podlešín 161/1, 273 25 Podlešín. Telefon +420 777 732 309. Servis i předání kola po předchozí domluvě.",
 );
 
 export default function Kontakt() {
@@ -99,7 +99,8 @@ export default function Kontakt() {
                 src="/workshop/hero.jpg"
                 alt="Dílna Custom Cycling Lab"
                 fill
-                priority
+                sizes="(max-width: 768px) 100vw, 896px"
+                preload
                 className="object-cover"
               />
             </div>
@@ -133,6 +134,7 @@ export default function Kontakt() {
                   src="/workshop/workshop-1.jpg"
                   alt="Dílna"
                   fill
+                  sizes="(max-width: 768px) 100vw, 896px"
                   className="object-cover transition duration-500 hover:scale-105"
                 />
               </div>
@@ -142,6 +144,7 @@ export default function Kontakt() {
                   src="/workshop/workshop-2.jpg"
                   alt="Dílna"
                   fill
+                  sizes="(max-width: 768px) 100vw, 896px"
                   className="object-cover transition duration-500 hover:scale-105"
                 />
               </div>
@@ -151,6 +154,7 @@ export default function Kontakt() {
                   src="/workshop/workshop-3.jpg"
                   alt="Dílna"
                   fill
+                  sizes="(max-width: 768px) 100vw, 896px"
                   className="object-cover transition duration-500 hover:scale-105"
                 />
               </div>
@@ -160,6 +164,7 @@ export default function Kontakt() {
                   src="/workshop/workshop-4.jpg"
                   alt="Dílna"
                   fill
+                  sizes="(max-width: 768px) 100vw, 896px"
                   className="object-cover transition duration-500 hover:scale-105"
                 />
               </div>

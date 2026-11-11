@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/vyzvednuti",
-  "Vyzvednutí a vrácení kola | Custom Cycling Lab",
-  "Svoz kola do servisu za 8 Kč/km podle jednosměrné vzdálenosti od dílny. Vyzvednutí i vrácení po předchozí domluvě.",
+  "Svoz kol do servisu: Podlešín a okolí | Custom Cycling Lab",
+  "Vyzvednutí a vrácení kola za 8 Kč/km podle jednosměrné vzdálenosti od dílny v Podlešíně. Termín a adresu předání si domluvíme předem.",
 );
 
 export default function Vyzvednuti() {
@@ -41,7 +42,10 @@ export default function Vyzvednuti() {
             </div>
 
             <div>
-              <img
+              <Image
+                width={4045}
+                height={3034}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 src="/vyzvednuti.jpg"
                 alt="Vyzvednutí kola"
                 className="w-full h-[750px] object-cover"

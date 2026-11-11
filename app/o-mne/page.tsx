@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
@@ -44,7 +45,10 @@ export default function OMne() {
             </div>
 
             <div>
-              <img
+              <Image
+                width={6048}
+                height={4024}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 src="/about.jpg"
                 alt="O mně"
                 className="w-full h-[750px] object-cover"

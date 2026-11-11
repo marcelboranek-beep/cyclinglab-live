@@ -80,7 +80,8 @@ export default function Header() {
               src="/logo-white.png"
               alt="Custom Cycling Lab"
               fill
-              priority
+              sizes="(max-width: 1024px) 256px, 320px"
+              preload
               className="object-contain object-left"
             />
           </Link>

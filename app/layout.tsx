@@ -4,6 +4,8 @@ import "./globals.css";
 import Script from "next/script";
 import CookieBanner from "./components/CookieBanner";
 import { pageMetadata, site } from "@/lib/site";
+import StructuredData from "./components/StructuredData";
+import { businessSchema } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   ...pageMetadata(
     "/",
-    "Custom Cycling Lab | Servis a stavby kol",
-    "Individuální servis a stavby kol. Ultrazvukové čištění řetězů, horké voskování Dynamic, keramická ochrana KORREK TFC a svoz kola po domluvě.",
+    "Servis kol Podlešín u Slaného | Custom Cycling Lab",
+    "Servis a stavby kol v Podlešíně u Slaného, také pro jezdce z Kladna. Horké voskování Dynamic, keramická ochrana KORREK TFC a svoz kola po domluvě.",
   ),
   metadataBase: new URL(site.origin),
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
 };
 
 export default function RootLayout({
@@ -44,28 +47,18 @@ export default function RootLayout({
     gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
     gtag('js', new Date());
   `}</Script>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+        <StructuredData
+          data={[
+            businessSchema,
+            {
               "@context": "https://schema.org",
-              "@type": "BikeStore",
-              name: site.name,
+              "@type": "WebSite",
+              "@id": site.origin + "/#website",
               url: site.origin,
-              telephone: site.tel,
-              email: site.email,
-              image: site.origin + "/workshop/hero.jpg",
-              sameAs: [site.instagram],
-              hasMap: site.map,
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Podlešín 161/1",
-                addressLocality: "Podlešín",
-                postalCode: "273 25",
-                addressCountry: "CZ",
-              },
-            }).replace(/</g, "\\u003c"),
-          }}
+              name: site.name,
+              inLanguage: "cs",
+            },
+          ]}
         />
         <CookieBanner />
       </body>

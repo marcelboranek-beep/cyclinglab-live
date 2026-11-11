@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "./components/Header";
 
 import Footer from "./components/Footer";
@@ -44,9 +45,12 @@ export default function CustomCyclingLab() {
     >
       <Header />
       <section className="relative min-h-[760px] md:min-h-screen overflow-hidden bg-black text-white">
-        <img
+        <Image
           src="/hero-bike.jpg"
-          alt="Custom Cycling Lab"
+          fill
+          preload
+          sizes="100vw"
+          alt="Kolo v dílně Custom Cycling Lab v Podlešíně"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -54,6 +58,9 @@ export default function CustomCyclingLab() {
 
         <div className="relative z-10 max-w-3xl px-6 sm:px-16 pt-36 pb-16">
           <div className="max-w-2xl">
+            <p className="mb-5 text-xs uppercase tracking-[0.18em] text-white/70">
+              Servis a stavby kol · Podlešín u Slaného
+            </p>
             <h1 className="text-5xl leading-tight md:text-7xl font-light">
               Radost z kola začíná
               <br />v detailech.
@@ -88,8 +95,9 @@ export default function CustomCyclingLab() {
             </div>
 
             <p className="mt-6 text-white/80 max-w-xl leading-relaxed">
-              Individuální servis a stavby kol. Ultrazvukové čištění řetězů a
-              horké voskování Dynamic. Vyzvednutí kola po domluvě.
+              Servis kol v Podlešíně u Slaného, také pro jezdce z Kladna a
+              okolí. Ultrazvukové čištění řetězů a horké voskování Dynamic.
+              Vyzvednutí kola po domluvě.
             </p>
             <a
               href="/#servis"
@@ -148,6 +156,24 @@ export default function CustomCyclingLab() {
         ))}
       </section>
 
+      <section className="px-8 py-16 md:px-16 border-b border-black/10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-light">Péče o řetěz a ochrana laku</h2>
+          <p className="mt-5 text-black/70 max-w-3xl">
+            Vedle servisu kol nabízím ultrazvukové čištění a horké voskování
+            řetězů Dynamic i keramickou ochranu KORREK TFC. Podrobnosti, rozsah
+            a ceny najdeš u jednotlivých služeb.
+          </p>
+          <div className="mt-7 flex flex-wrap gap-6">
+            <a href="/pece-o-retez" className="underline">
+              Ultrazvukové čištění a horké voskování řetězu ↗
+            </a>
+            <a href="/keramicka-ochrana-kola" className="underline">
+              Keramická ochrana kola KORREK TFC ↗
+            </a>
+          </div>
+        </div>
+      </section>
       <section id="work" className="bg-black text-white px-8 py-24 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -170,19 +196,28 @@ export default function CustomCyclingLab() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <img
+            <Image
+              width={1152}
+              height={2048}
+              sizes="(max-width: 768px) 100vw, 33vw"
               src="/gallery-1.jpg"
-              alt="Bike"
+              alt="Kolo z galerie staveb Custom Cycling Lab"
               className="h-[420px] w-full object-cover"
             />
-            <img
+            <Image
+              width={1688}
+              height={3008}
+              sizes="(max-width: 768px) 100vw, 33vw"
               src="/gallery-2.jpg"
-              alt="Bike detail"
+              alt="Detail zakázkové stavby kola Custom Cycling Lab"
               className="h-[420px] w-full object-cover"
             />
-            <img
+            <Image
+              width={1688}
+              height={3008}
+              sizes="(max-width: 768px) 100vw, 33vw"
               src="/gallery-3.jpg"
-              alt="Bike component"
+              alt="Komponent ze stavby kola Custom Cycling Lab"
               className="h-[420px] w-full object-cover"
             />
           </div>
@@ -193,7 +228,10 @@ export default function CustomCyclingLab() {
         id="about"
         className="grid grid-cols-1 lg:grid-cols-2 gap-16 px-8 py-24 md:px-16 items-center"
       >
-        <img
+        <Image
+          width={6048}
+          height={4024}
+          sizes="(max-width: 1024px) 100vw, 50vw"
           src="/about.jpg"
           alt="Marcel Bořánek"
           className="w-full max-w-xl object-cover grayscale"

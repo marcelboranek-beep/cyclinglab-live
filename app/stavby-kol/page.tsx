@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/stavby-kol",
-  "Stavby kol na míru | Custom Cycling Lab",
-  "Zakázkové stavby silničních, gravelových a horských kol. Výběr rámu, komponentů a konfigurace podle tvých potřeb a rozpočtu.",
+  "Stavby kol na míru v Podlešíně | Custom Cycling Lab",
+  "Zakázkové stavby silničních, gravelových a horských kol v Podlešíně u Slaného. Osobní výběr rámu a komponentů podle rozpočtu a stylu jízdy.",
 );
 
 export default function StavbyKol() {
@@ -43,7 +44,10 @@ export default function StavbyKol() {
             </div>
 
             <div>
-              <img
+              <Image
+                width={3109}
+                height={4024}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 src="/stavba-kol.jpg"
                 alt="Stavba kol"
                 className="w-full h-[750px] object-cover"
@@ -153,7 +157,10 @@ export default function StavbyKol() {
                 },
               ].map((photo) => (
                 <figure key={photo.src}>
-                  <img
+                  <Image
+                    width={1152}
+                    height={2048}
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     src={photo.src}
                     alt={photo.alt}
                     loading="lazy"

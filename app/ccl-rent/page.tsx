@@ -8,8 +8,8 @@ import { configured } from "@/lib/rent/store";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = pageMetadata(
   "/ccl-rent",
-  "CCL Rent | Půjčovna Evoc a Thule | Custom Cycling Lab",
-  "Půjčení Evoc Road Bike Bag PRO a nosiče Thule EasyFold XT 933. Předání v Podlešíně 161/1, možnost zabalení kola a dovozu na letiště Praha.",
+  "Půjčovna kufru Evoc a nosiče Thule | CCL Rent Podlešín",
+  "Půjčovna Evoc Road Bike Bag PRO za 250 Kč/den, od 15 dní 200 Kč/den. Nosič Thule EasyFold XT 933 za 150 Kč/den. Předání v Podlešíně po domluvě.",
 );
 
 export default function RentPage() {

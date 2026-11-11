@@ -5,6 +5,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/servis-kol",
     "/cenik",
+    "/pece-o-retez",
+    "/keramicka-ochrana-kola",
     "/stavby-kol",
     "/o-mne",
     "/vyzvednuti",

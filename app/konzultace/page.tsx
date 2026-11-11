@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/konzultace",
-  "Cyklistické konzultace | Custom Cycling Lab",
-  "Poradenství s výběrem kola, komponentů, nastavením posedu nebo kontrolou bazarového kola. Ozvi se se svým dotazem.",
+  "Poradenství a výběr kola v Podlešíně | Custom Cycling Lab",
+  "Pomoc s výběrem kola, komponentů, nastavením a kontrolou bazarového kola. Individuální konzultace v Custom Cycling Lab, Podlešín u Slaného.",
 );
 
 export default function Konzultace() {
