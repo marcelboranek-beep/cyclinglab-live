@@ -29,7 +29,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:info@customcyclinglab.cz"
+                href="mailto:info@customcyclinglab.com"
                 className="block hover:text-white transition"
               >
                 info@customcyclinglab.com
@@ -71,6 +71,7 @@ export default function Footer() {
           <p>© 2025 Custom Cycling Lab</p>
 
          <div className="flex gap-6">
+  <Link href="/cenik" className="underline hover:text-white">Ceník</Link>
   <Link
     href="/gdpr"
     className="underline cursor-pointer hover:text-white"

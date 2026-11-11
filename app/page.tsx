@@ -156,6 +156,7 @@ export default function CustomCyclingLab() {
 >
   Prozkoumat služby
 </a>
+<a href="/cenik" className="mt-4 ml-0 sm:ml-4 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300">Ceník servisu</a>
           </div>
         </div>
       </section>
@@ -368,6 +369,11 @@ export default function CustomCyclingLab() {
     <option value="Základní servis 1090 Kč">
       Základní servis – 1090 Kč
     </option>
+    <option value="Ultrazvukové čištění řetězu 300 Kč">Ultrazvukové čištění řetězu – 300 Kč</option>
+    <option value="Horké voskování Dynamic 350 Kč">Horké voskování Dynamic – 350 Kč</option>
+    <option value="Čištění a horké voskování Dynamic 650 Kč">Čištění a horké voskování Dynamic – 650 Kč</option>
+    <option value="Kompletní servis + KORREK TFC (2900 + 1990 Kč)">Kompletní servis + keramická ochrana KORREK TFC – 4 890 Kč</option>
+    <option value="Nevím, potřebuji poradit">Nevím, potřebuji poradit</option>
     <option value="Jiné">
       Jiné
     </option>
@@ -449,7 +455,7 @@ export default function CustomCyclingLab() {
               </a>
 
               <a
-                href="mailto:info@customcyclinglab.cz"
+                href="mailto:info@customcyclinglab.com"
                 className="block hover:text-white transition"
               >
                 info@customcyclinglab.com
@@ -491,6 +497,7 @@ export default function CustomCyclingLab() {
           <p>© 2025 Custom Cycling Lab</p>
 
          <div className="flex gap-6">
+  <Link href="/cenik" className="underline hover:text-white">Ceník</Link>
   <Link
     href="/gdpr"
     className="underline cursor-pointer hover:text-white"

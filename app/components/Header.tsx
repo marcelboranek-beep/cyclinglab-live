@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const links = [
   { href: "/", label: "Domů" },
+  { href: "/cenik", label: "Ceník" },
   { href: "/o-mne", label: "O mně" },
   { href: "/stavby-kol", label: "Stavby kol" },
   { href: "/ccl-rent", label: "CCL Rent" },
@@ -58,7 +59,7 @@ useEffect(() => {
         </Link>
 
         {/* Desktop menu */}
-        <nav className="hidden md:flex items-center gap-10 uppercase tracking-[0.18em] text-sm text-white">
+        <nav className="hidden md:flex items-center gap-6 whitespace-nowrap uppercase tracking-[0.18em] text-sm text-white">
           {links.map((item) => (
             <Link
               key={item.href}
@@ -72,6 +73,7 @@ useEffect(() => {
 
         {/* Mobil */}
         <div className="md:hidden flex items-center gap-4">
+        <Link href="/cenik" className="text-xs uppercase tracking-[0.2em] text-white whitespace-nowrap">Ceník</Link>
         <Link href="/ccl-rent" className="text-xs uppercase tracking-[0.2em] text-white whitespace-nowrap">CCL Rent</Link>
         <Link
           href="/kontakt"

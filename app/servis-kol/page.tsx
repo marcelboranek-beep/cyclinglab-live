@@ -73,6 +73,7 @@ export default function ServisKol() {
         </div>
       </section>
 
+      <section className="px-8 py-12 md:px-16 border-b border-black/10"><div className="max-w-5xl mx-auto"><h2 className="text-3xl font-light">Ceny přehledně na jednom místě.</h2><p className="mt-5 text-black/70">Servisní balíčky, jednotlivé úkony i nadstandardní péče o řetěz a rám.</p><a href="/cenik" className="mt-6 inline-block border border-black px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-black hover:text-white transition">Zobrazit ceník</a></div></section>
       {/* PROCESS */}
       <section className="px-8 py-24 md:px-16 border-b border-black/10">
         <div className="max-w-6xl mx-auto">
@@ -205,11 +206,11 @@ export default function ServisKol() {
 
             <div className="border-t border-black pt-6">
               <h3 className="text-2xl font-light">
-                Přepáskování ráfku
+                Nalepení bezdušové pásky DT Swiss (včetně pásky)
               </h3>
 
               <p className="mt-4 text-black/70">
-                200,-
+                300,- / 1 kolo
               </p>
             </div>
 
@@ -247,7 +248,7 @@ export default function ServisKol() {
           </p>
 
           <a
-            href="/o-mne"
+            href="/kontakt"
             className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
           >
             Kontaktovat
