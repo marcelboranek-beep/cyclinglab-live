@@ -363,20 +363,13 @@ export default function CustomCyclingLab() {
     <option value="" disabled>
       O jaký servis mám zájem?
     </option>
-    <option value="Kompletní servis 2900 Kč">
-      Kompletní servis – 2900 Kč
-    </option>
-    <option value="Základní servis 1090 Kč">
-      Základní servis – 1090 Kč
-    </option>
+    <option value="Základní servis 1090 Kč">Základní servis – 1 090 Kč</option>
+    <option value="Kompletní servis 2900 Kč">Kompletní servis – 2 900 Kč</option>
+    <option value="Kompletní servis + keramická ochrana KORREK TFC 4890 Kč">Kompletní servis + keramická ochrana KORREK TFC – 4 890 Kč</option>
+    <option value="Kompletní servis + horké voskování Dynamic 3250 Kč">Kompletní servis + horké voskování řetězu Dynamic – 3 250 Kč</option>
+    <option value="Kompletní servis + keramická ochrana KORREK TFC + horké voskování Dynamic 5240 Kč">Kompletní servis + keramika + horké voskování řetězu – 5 240 Kč</option>
     <option value="Ultrazvukové čištění řetězu 300 Kč">Ultrazvukové čištění řetězu – 300 Kč</option>
-    <option value="Horké voskování Dynamic 350 Kč">Horké voskování Dynamic – 350 Kč</option>
-    <option value="Čištění a horké voskování Dynamic 650 Kč">Čištění a horké voskování Dynamic – 650 Kč</option>
-    <option value="Kompletní servis + KORREK TFC (2900 + 1990 Kč)">Kompletní servis + keramická ochrana KORREK TFC – 4 890 Kč</option>
-    <option value="Nevím, potřebuji poradit">Nevím, potřebuji poradit</option>
-    <option value="Jiné">
-      Jiné
-    </option>
+    <option value="Horké voskování Dynamic 350 Kč">Horké voskování řetězu Dynamic – 350 Kč</option>
   </select>
 
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
