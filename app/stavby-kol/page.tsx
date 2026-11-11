@@ -1,3 +1,4 @@
+import { buildPhotos } from "../../lib/build-photos";
 import StructuredData from "../components/StructuredData";
 import { businessId, businessSchema } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -188,30 +189,17 @@ export default function StavbyKol() {
             <h2 id="realizace" className="mt-6 text-4xl font-light">
               Detaily staveb kol
             </h2>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  src: "/gallery-1.jpg",
-                  alt: "Kolo z galerie Custom Cycling Lab",
-                },
-                {
-                  src: "/gallery-2.jpg",
-                  alt: "Detail stavby kola z dílny Custom Cycling Lab",
-                },
-                {
-                  src: "/gallery-3.jpg",
-                  alt: "Komponenty ze stavby kola Custom Cycling Lab",
-                },
-              ].map((photo) => (
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {buildPhotos.map((photo) => (
                 <figure key={photo.src}>
                   <Image
-                    width={1152}
-                    height={2048}
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    width={1800}
+                    height={1200}
+                    sizes="(max-width: 640px) 100vw, 50vw"
                     src={photo.src}
                     alt={photo.alt}
                     loading="lazy"
-                    className="w-full h-80 object-cover"
+                    className="w-full h-auto aspect-[3/2] object-contain bg-[#171e1b]"
                   />
                 </figure>
               ))}

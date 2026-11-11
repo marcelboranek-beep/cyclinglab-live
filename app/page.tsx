@@ -1,3 +1,4 @@
+import { buildPhotos } from "../lib/build-photos";
 import Image from "next/image";
 import Header from "./components/Header";
 
@@ -195,31 +196,18 @@ export default function CustomCyclingLab() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Image
-              width={1152}
-              height={2048}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              src="/gallery-1.jpg"
-              alt="Kolo z galerie staveb Custom Cycling Lab"
-              className="h-[420px] w-full object-cover"
-            />
-            <Image
-              width={1688}
-              height={3008}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              src="/gallery-2.jpg"
-              alt="Detail zakázkové stavby kola Custom Cycling Lab"
-              className="h-[420px] w-full object-cover"
-            />
-            <Image
-              width={1688}
-              height={3008}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              src="/gallery-3.jpg"
-              alt="Komponent ze stavby kola Custom Cycling Lab"
-              className="h-[420px] w-full object-cover"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {buildPhotos.map((photo) => (
+              <Image
+                key={photo.src}
+                width={1800}
+                height={1200}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                src={photo.src}
+                alt={photo.alt}
+                className="aspect-[3/2] w-full h-auto object-contain bg-[#171e1b]"
+              />
+            ))}
           </div>
         </div>
       </section>
