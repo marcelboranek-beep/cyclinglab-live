@@ -1,14 +1,7 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import Link from "next/link";
 import Header from "./components/Header";
 
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void;
-  }
-}
+import Footer from "./components/Footer";
+import ServiceForm from "./components/ServiceForm";
 
 function AnimatedCounter({
   target,
@@ -17,71 +10,14 @@ function AnimatedCounter({
   target: number;
   suffix?: string;
 }) {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-
-    const interval = setInterval(() => {
-      start += Math.ceil(target / 25);
-
-      if (start >= target) {
-        start = target;
-        clearInterval(interval);
-      }
-
-      setCount(start);
-    }, 40);
-
-    return () => clearInterval(interval);
-  }, [target]);
-
   return (
     <span>
-      {count}
+      {target}
       {suffix}
     </span>
   );
 }
 export default function CustomCyclingLab() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  const form = e.currentTarget;
-  const formData = new FormData(form);
-
-  const response = await fetch("/api/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      bikeType: formData.get("bikeType"),
-      serviceType: formData.get("serviceType"),
-      deliveryMethod: formData.get("deliveryMethod"),
-      message: formData.get("message"),
-    }),
-  });
-
-  if (response.ok) {
-
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "conversion", {
-      send_to: "AW-18220669308/inX7CMinv7wcEPyypfBD",
-    });
-  }
-
-  alert("Poptávka byla úspěšně odeslána.");
-  form.reset();
-
-} else {
-    alert("Nepodařilo se odeslat formulář.");
-  }
-};
   const services = [
     {
       title: "Individuální servis kol",
@@ -102,61 +38,71 @@ export default function CustomCyclingLab() {
   ];
 
   return (
-    <main className="bg-[#f5f4f1] text-black min-h-screen font-sans">
+    <main
+      id="main-content"
+      className="bg-[#f5f4f1] text-black min-h-screen font-sans"
+    >
       <Header />
-      <section className="relative h-screen overflow-hidden bg-black text-white">
+      <section className="relative min-h-[760px] md:min-h-screen overflow-hidden bg-black text-white">
         <img
-  src="/hero-bike.jpg"
-  alt="Custom Cycling Lab"
-  className="absolute inset-0 h-full w-full object-cover"
-/>
+          src="/hero-bike.jpg"
+          alt="Custom Cycling Lab"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-<div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent pointer-events-none"></div>
 
-
-        <div className="relative z-10 max-w-3xl px-16 pt-40">
+        <div className="relative z-10 max-w-3xl px-6 sm:px-16 pt-36 pb-16">
           <div className="max-w-2xl">
-            <h2 className="text-5xl leading-tight md:text-7xl font-light">
+            <h1 className="text-5xl leading-tight md:text-7xl font-light">
               Radost z kola začíná
-              <br />
-              v detailech.
-            </h2>
-<div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl">
-  <div>
-    <div className="text-3xl md:text-5xl font-light text-white">
-      <AnimatedCounter target={295} suffix="+" />
-    </div>
-    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
-      kol na zakázku
-    </div>
-  </div>
+              <br />v detailech.
+            </h1>
+            <div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl">
+              <div>
+                <div className="text-3xl md:text-5xl font-light text-white">
+                  <AnimatedCounter target={295} suffix="+" />
+                </div>
+                <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
+                  kol na zakázku
+                </div>
+              </div>
 
-  <div>
-    <div className="text-3xl md:text-5xl font-light text-white">
-      <AnimatedCounter target={10} suffix="+" />
-    </div>
-    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
-      Let zkušeností
-    </div>
-  </div>
+              <div>
+                <div className="text-3xl md:text-5xl font-light text-white">
+                  <AnimatedCounter target={10} suffix="+" />
+                </div>
+                <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
+                  Let zkušeností
+                </div>
+              </div>
 
-  <div>
-    <div className="text-3xl md:text-5xl font-light text-white">
-     <AnimatedCounter target={100} suffix="%" />
-    </div>
-    <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
-      Individuální přístup
-    </div>
-  </div>
-</div>
-           
+              <div>
+                <div className="text-3xl md:text-5xl font-light text-white">
+                  <AnimatedCounter target={100} suffix="%" />
+                </div>
+                <div className="mt-2 text-[10px] uppercase tracking-[0.25em] text-white/50">
+                  Individuální přístup
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-6 text-white/80 max-w-xl leading-relaxed">
+              Individuální servis a stavby kol. Ultrazvukové čištění řetězů a
+              horké voskování Dynamic. Vyzvednutí kola po domluvě.
+            </p>
             <a
-  href="#services"
-  className="mt-12 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
->
-  Prozkoumat služby
-</a>
-<a href="/cenik" className="mt-4 ml-0 sm:ml-4 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300">Ceník servisu</a>
+              href="/#servis"
+              className="mt-12 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
+            >
+              Objednat servis
+            </a>
+            <a
+              href="/cenik"
+              className="mt-4 ml-0 sm:ml-4 inline-block border border-white px-8 py-4 uppercase tracking-[0.2em] text-sm hover:bg-white hover:text-black transition duration-300"
+            >
+              Ceník servisu
+            </a>
           </div>
         </div>
       </section>
@@ -165,41 +111,41 @@ export default function CustomCyclingLab() {
         id="services"
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-0 border-t border-black/10"
       >
-       {services.map((service, index) => (
-  <div
-    key={index}
-    className="border-b border-r border-black/10 p-10 md:p-14 min-h-[320px] flex flex-col justify-between"
-  >
-    <div>
-      <div className="mb-10 text-sm uppercase tracking-[0.25em] text-black/40">
-        0{index + 1}
-      </div>
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="border-b border-r border-black/10 p-10 md:p-14 min-h-[320px] flex flex-col justify-between"
+          >
+            <div>
+              <div className="mb-10 text-sm uppercase tracking-[0.25em] text-black/40">
+                0{index + 1}
+              </div>
 
-      <h3 className="text-3xl font-light leading-snug max-w-xs">
-        {service.title}
-      </h3>
+              <h3 className="text-3xl font-light leading-snug max-w-xs">
+                {service.title}
+              </h3>
 
-      <p className="mt-8 text-black/60 leading-relaxed max-w-sm">
-        {service.text}
-      </p>
-    </div>
+              <p className="mt-8 text-black/60 leading-relaxed max-w-sm">
+                {service.text}
+              </p>
+            </div>
 
-    <a
-      href={
-        index === 0
-          ? "/servis-kol"
-          : index === 1
-          ? "/stavby-kol"
-          : index === 2
-          ? "/vyzvednuti"
-          : "/konzultace"
-      }
-      className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
-    >
-      Více informací
-    </a>
-  </div>
-))}
+            <a
+              href={
+                index === 0
+                  ? "/servis-kol"
+                  : index === 1
+                    ? "/stavby-kol"
+                    : index === 2
+                      ? "/vyzvednuti"
+                      : "/konzultace"
+              }
+              className="mt-12 inline-block uppercase tracking-[0.2em] text-sm border-b border-black pb-2"
+            >
+              Více informací
+            </a>
+          </div>
+        ))}
       </section>
 
       <section id="work" className="bg-black text-white px-8 py-24 md:px-16">
@@ -216,11 +162,11 @@ export default function CustomCyclingLab() {
             </h2>
 
             <a
-  href="/stavby-kol"
-  className="mt-12 inline-block border-b border-white pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition"
->
-  Stavby kol
-</a>
+              href="/stavby-kol"
+              className="mt-12 inline-block border-b border-white pb-2 uppercase tracking-[0.2em] text-sm hover:opacity-70 transition"
+            >
+              Stavby kol
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -267,8 +213,9 @@ export default function CustomCyclingLab() {
           </h2>
 
           <p className="mt-10 text-lg leading-relaxed text-black/70">
-            Cyklistice se věnuji více jak deset let. Každé kolo, které projde mýma
-            rukama, dostává maximální péči a individuální přístup.
+            Cyklistice se věnuji 18 let, z toho více než deset let stavím kola
+            na míru. Každé kolo, které projde mýma rukama, dostává maximální
+            péči a individuální přístup.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-black/70">
@@ -276,236 +223,35 @@ export default function CustomCyclingLab() {
           </p>
 
           <a
-  href="/o-mne"
-  className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
->
-  Více o mně
-</a>
+            href="/o-mne"
+            className="mt-12 inline-block border-b border-black pb-2 uppercase tracking-[0.2em] text-sm"
+          >
+            Více o mně
+          </a>
         </div>
       </section>
-<section
-  id="servis"
-  className="bg-black text-white py-32 px-8"
->
-  <div className="max-w-4xl mx-auto">
-
-    <div className="mb-10">
-
-  <div className="text-xs uppercase tracking-[0.3em] text-white/50 mb-6">
-    OBJEDNÁVKA SERVISU
-  </div>
-
-  <h2 className="text-3xl md:text-5xl font-light leading-tight">
-    Potřebujete servis
-    <br />
-    nebo seřízení kola?
-  </h2>
-
-  <p className="mt-6 text-white/60 max-w-xl">
-    Vyplňte formulář a ozvu se vám s návrhem termínu a rozsahu servisu.
-  </p>
-
-</div>
-
-    <form
-  className="space-y-8"
-  onSubmit={handleSubmit}
->
-
-      <input
-  name="name"
-  type="text"
-  placeholder="Jméno *"
-  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
-/>
-
-      <input
-  name="email"
-  type="email"
-  placeholder="E-mail *"
-  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
-/>
-
-      <input
-  name="phone"
-  type="tel"
-  placeholder="Telefon *"
-  className="w-full bg-transparent border-b border-white/20 pb-4 text-white outline-none transition-colors focus:border-white"
-/>
-
-<div className="relative">
-  <select
-    name="bikeType"
-    className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
-    defaultValue=""
-  >
-    <option value="" disabled>
-      Jaké máte kolo?
-    </option>
-    <option>MTB</option>
-    <option>Silniční</option>
-    <option>Gravel</option>
-    <option>Treking</option>
-    <option>E-bike</option>
-    <option>Jiné</option>
-  </select>
-
-  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-    ⌄
-  </span>
-</div>
-<div className="relative mt-6">
-  <select
-    name="serviceType"
-    className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
-    defaultValue=""
-  >
-    <option value="" disabled>
-      O jaký servis mám zájem?
-    </option>
-    <option value="Základní servis 1090 Kč">Základní servis – 1 090 Kč</option>
-    <option value="Kompletní servis 2900 Kč">Kompletní servis – 2 900 Kč</option>
-    <option value="Kompletní servis + keramická ochrana KORREK TFC 4890 Kč">Kompletní servis + keramická ochrana KORREK TFC – 4 890 Kč</option>
-    <option value="Kompletní servis + horké voskování Dynamic 3250 Kč">Kompletní servis + horké voskování řetězu Dynamic – 3 250 Kč</option>
-    <option value="Komplet pro fajnšmekry (kompletní servis + keramika + ultrazvukové čištění + horké voskování Dynamic) 5000 Kč">Komplet pro fajnšmekry – servis + keramika + čištění a horké voskování řetězu – 5 000 Kč</option>
-    <option value="Péče o řetěz – ultrazvukové čištění a horké voskování Dynamic 650 Kč">Kompletní péče o řetěz – ultrazvukové čištění a horké voskování Dynamic – 650 Kč</option>
-  </select>
-
-  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-    ⌄
-  </span>
-</div>
-      <div className="relative">
-
-  <select
-  name="deliveryMethod"
-  className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
-  defaultValue=""
->
-  <option value="" disabled>
-    Jak chcete kolo předat?
-  </option>
-  <option>Přivezu osobně</option>
-  <option>Chci vyzvednutí kola na adrese</option>
-</select>
-
-  <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
-  ⌄
-</span>
-
-</div>
-
-      <textarea
-  name="message"
-  rows={5}
-  placeholder="Dotaz / Popis servisu *"
-  className="w-full bg-black text-white border-b border-white/20 pb-4 outline-none appearance-none"
-/>
- 
-
-      <button
-  type="submit"
-  className="mt-10 border border-white px-8 py-4 uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300"
->
-  Odeslat poptávku
-</button>
-<p className="mt-3 text-xs text-white/40">
-  Odesláním formuláře berete na vědomí zpracování osobních údajů.
-  <Link href="/gdpr" className="underline ml-1">
-    Více informací
-  </Link>
-</p>
-
-    </form>
-
-  </div>
-</section>
-      <footer
-        id="contact"
-        className="bg-black text-white px-8 py-16 md:px-16"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div>
-            <h3 className="text-4xl font-light">CCL</h3>
-            <p className="mt-3 text-xl">Custom Cycling Lab</p>
-            <p className="mt-2 uppercase tracking-[0.3em] text-sm text-white/50">
-              Marcel Bořánek
-            </p>
-          </div>
-
-          <div>
-            <p className="uppercase tracking-[0.25em] text-sm text-white/50">
-              Kontakt
-            </p>
-
-            <div className="mt-6 space-y-3 text-white/80">
-              <a
-                href="tel:+420777732309"
-                className="block hover:text-white transition"
-              >
-                +420 777 732 309
-              </a>
-
-              <a
-                href="mailto:info@customcyclinglab.com"
-                className="block hover:text-white transition"
-              >
-                info@customcyclinglab.com
-              </a>
-
-              <p>Podlešín, Česká republika</p>
+      <section id="servis" className="bg-black text-white py-32 px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-10">
+            <div className="text-xs uppercase tracking-[0.3em] text-white/50 mb-6">
+              OBJEDNÁVKA SERVISU
             </div>
-          </div>
 
-          <div>
-            <p className="uppercase tracking-[0.25em] text-sm text-white/50">
-              Otevírací doba
+            <h2 className="text-3xl md:text-5xl font-light leading-tight">
+              Potřebuješ servis
+              <br />
+              nebo seřízení kola?
+            </h2>
+
+            <p className="mt-6 text-white/60 max-w-xl">
+              Vyplň formulář a ozvu se ti s návrhem termínu a rozsahu servisu.
             </p>
-
-            <div className="mt-6 space-y-3 text-white/80">
-              <p>Otevřeno dle telefonické domluvy</p>
-            </div>
           </div>
 
-          <div>
-            <p className="uppercase tracking-[0.25em] text-sm text-white/50">
-              Sledujte mě
-            </p>
-
-            <div className="mt-6 flex gap-4">
-              <a
-                href="https://instagram.com/custom_cycling_lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-white/20 rounded-full px-5 py-3 hover:bg-white hover:text-black transition"
-              >
-                Instagram
-              </a>
-            </div>
-          </div>
+          <ServiceForm />
         </div>
-
-        <div className="mt-20 border-t border-white/10 pt-8 text-sm text-white/40 flex flex-col md:flex-row justify-between gap-4">
-          <p>© 2025 Custom Cycling Lab</p>
-
-         <div className="flex gap-6">
-  <Link href="/cenik" className="underline hover:text-white">Ceník</Link>
-  <Link
-    href="/gdpr"
-    className="underline cursor-pointer hover:text-white"
-  >
-    Zásady ochrany osobních údajů
-  </Link>
-
-  <Link
-    href="/cookies"
-    className="underline cursor-pointer hover:text-white"
-  >
-    Cookies
-  </Link>
-</div>
-        </div>
-      </footer>
+      </section>
+      <Footer />
     </main>
   );
 }

@@ -468,10 +468,39 @@
   }
 }
 
-.price-page .bundle { grid-column: 1 / -1; background: linear-gradient(135deg, #242c28, #171d1b); border-color: #495147; color: #f5f4ef; }
-.price-page .bundle-original { color: #bdc6b8; margin-top: 22px; font-size: 14px; }
-.price-page .bundle .price { margin: 8px 0; font-size: clamp(42px, 6vw, 60px); }
-.price-page .bundle-saving { font-weight: 600; color: #d3e4a4; }
+.price-page .bundle {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #242c28, #171d1b);
+  border-color: #495147;
+  color: #f5f4ef;
+}
+.price-page .bundle-original {
+  color: #bdc6b8;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.price-page .bundle .price {
+  margin: 8px 0;
+  font-size: clamp(42px, 6vw, 60px);
+}
+.price-page .bundle-saving {
+  font-weight: 600;
+  color: #d3e4a4;
+}
 
-.price-page .bundle .eyebrow { color: #c6d3bd; }
-.price-page .bundle .note { color: #bdc6b8; }
+.price-page .bundle .eyebrow {
+  color: #c6d3bd;
+}
+.price-page .bundle .note {
+  color: #bdc6b8;
+}
+
+.price-page .service-faq {
+  margin-top: 60px;
+}
+.price-page .service-faq summary {
+  line-height: 1.5;
+}
+.price-page .service-faq p {
+  max-width: 800px;
+}

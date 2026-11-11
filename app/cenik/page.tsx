@@ -1,13 +1,15 @@
+import ServiceFaq from "../components/ServiceFaq";
+import { pageMetadata } from "@/lib/site";
 import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./cenik.css";
 
-export const metadata: Metadata = {
-  title: "Ceník servisu kol | Custom Cycling Lab",
-  description:
-    "Ceník servisu kol. Servisní balíčky, ultrazvukové čištění a horké voskování Dynamic i keramická ochrana KORREK TFC.",
-};
+export const metadata: Metadata = pageMetadata(
+  "/cenik",
+  "Ceník servisu kol | Custom Cycling Lab",
+  "Servisní balíčky, péče o řetěz Dynamic a keramická ochrana KORREK TFC. Kompletní nabídka a ceny Custom Cycling Lab.",
+);
 
 export default function CenikPage() {
   return (
@@ -15,7 +17,7 @@ export default function CenikPage() {
       <div className="price-header">
         <Header />
       </div>
-      <main className="price-page">
+      <main id="main-content" className="price-page">
         <div className="price-content">
           <section className="intro">
             <span className="eyebrow">Individuální péče o kolo</span>
@@ -138,7 +140,7 @@ export default function CenikPage() {
                   <li>Výměna brzdové kapaliny</li>
                   <li>Kontrola zapletených kol</li>
                   <li>Složení a dotažení momentovým klíčem</li>
-                  <li>Navoskování řetězu a testovací jízda</li>
+                  <li>Běžné ošetření řetězu a testovací jízda</li>
                   <li>Závěrečné vyleštění kola</li>
                 </ul>
                 <p className="note">
@@ -152,12 +154,25 @@ export default function CenikPage() {
               <article className="package bundle">
                 <div className="eyebrow">Výhodný balíček</div>
                 <h3>Komplet pro fajnšmekry</h3>
-                <p>Kompletní servis kola, keramická ochrana KORREK TFC, ultrazvukové čištění řetězu a voskování řetězu v horké lázni Dynamic.</p>
-                <p className="bundle-original">Součet jednotlivých služeb: <s>5 540 Kč</s></p>
+                <p>
+                  Kompletní servis kola, keramická ochrana KORREK TFC,
+                  ultrazvukové čištění řetězu a voskování řetězu v horké lázni
+                  Dynamic.
+                </p>
+                <p className="bundle-original">
+                  Součet jednotlivých služeb: <s>5 540 Kč</s>
+                </p>
                 <p className="price">5 000 Kč</p>
                 <p className="bundle-saving">Ušetříš 540 Kč</p>
-                <p className="note">Keramická ochrana zahrnuje dekontaminaci laku a u lesklého laku také rozleštění jemných škrábanců leštičkou. Součástí balíčku je ultrazvukové čištění řetězu a horké voskování řetězu.</p>
-                <a className="btn" href="/#servis">OBJEDNAT KOMPLET ↗</a>
+                <p className="note">
+                  Keramická ochrana zahrnuje dekontaminaci laku a u lesklého
+                  laku také rozleštění jemných škrábanců leštičkou. Součástí
+                  balíčku je ultrazvukové čištění řetězu a horké voskování
+                  řetězu.
+                </p>
+                <a className="btn" href="/#servis">
+                  OBJEDNAT KOMPLET ↗
+                </a>
               </article>
             </div>
           </section>
@@ -231,6 +246,7 @@ export default function CenikPage() {
               řetězu v horké lázni Dynamic zahrnuje vosk.
             </p>
           </section>
+          <ServiceFaq />
           <section className="bottom">
             <div>
               <h2>Potřebuješ celkový servis?</h2>
