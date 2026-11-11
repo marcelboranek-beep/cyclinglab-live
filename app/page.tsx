@@ -368,8 +368,7 @@ export default function CustomCyclingLab() {
     <option value="Kompletní servis + keramická ochrana KORREK TFC 4890 Kč">Kompletní servis + keramická ochrana KORREK TFC – 4 890 Kč</option>
     <option value="Kompletní servis + horké voskování Dynamic 3250 Kč">Kompletní servis + horké voskování řetězu Dynamic – 3 250 Kč</option>
     <option value="Komplet pro fajnšmekry (kompletní servis + keramika + ultrazvukové čištění + horké voskování Dynamic) 5000 Kč">Komplet pro fajnšmekry – servis + keramika + čištění a horké voskování řetězu – 5 000 Kč</option>
-    <option value="Ultrazvukové čištění řetězu 300 Kč">Ultrazvukové čištění řetězu – 300 Kč</option>
-    <option value="Horké voskování Dynamic 350 Kč">Horké voskování řetězu Dynamic – 350 Kč</option>
+    <option value="Péče o řetěz – ultrazvukové čištění a horké voskování Dynamic 650 Kč">Kompletní péče o řetěz – ultrazvukové čištění a horké voskování Dynamic – 650 Kč</option>
   </select>
 
   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none">
