@@ -467,3 +467,8 @@
     padding: 22px;
   }
 }
+
+.price-page .bundle { grid-column: 1 / -1; background: #e6ebdc; border-color: #a9b798; }
+.price-page .bundle-original { color: var(--muted); margin-top: 22px; font-size: 14px; }
+.price-page .bundle .price { margin: 8px 0; font-size: clamp(42px, 6vw, 60px); }
+.price-page .bundle-saving { font-weight: 600; color: #3d5632; }
