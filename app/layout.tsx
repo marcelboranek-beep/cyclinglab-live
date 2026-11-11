@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Servis a stavby kol v Podlešíně u Slaného, také pro jezdce z Kladna. Horké voskování Dynamic, keramická ochrana KORREK TFC a svoz kola po domluvě.",
   ),
   metadataBase: new URL(site.origin),
-  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+  verification: { google: "3ruAb6ah7jdzFrqfl1EJf6YtMkHm6Nt1jgWtOFRLRcI" },
 };
 
 export default function RootLayout({

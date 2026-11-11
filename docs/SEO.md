@@ -11,7 +11,7 @@
 
 ## Search Console
 
-Prozatím není doloženo přihlášení ani ověření vlastnictví; nezaměňovat s účtem Google Ads.
+Majitel se přihlásil do Google Search Console účtem info@customcyclinglab.com. Byla přidána URL-prefix služba https://www.customcyclinglab.com/ a do webu vložena veřejná HTML ověřovací značka vydaná tímto účtem. Dokončení ověření a odeslání sitemap ještě čeká na zveřejnění značky.
 
 1. Přihlásit vlastní Google účet do https://search.google.com/search-console.
 2. Nejjednodušší pro současné nasazení je URL-prefix https://www.customcyclinglab.com/ a ověření značkou HTML. Doménová služba je širší a vyžaduje DNS.
