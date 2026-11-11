@@ -21,12 +21,32 @@ export const businessSchema = {
     postalCode: "273 25",
     addressCountry: "CZ",
   },
-  areaServed: ["Podlešín", "Slaný", "Kladno"].map((name) => ({
+  areaServed: [
+    "Podlešín",
+    "Slaný",
+    "Kladno",
+    "Praha",
+    "Kralupy nad Vltavou",
+  ].map((name) => ({
     "@type": "City",
     name,
   })),
   currenciesAccepted: "CZK",
-  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "19:00" }],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "08:00",
+      closes: "19:00",
+    },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Servis a péče o kolo",

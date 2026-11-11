@@ -1,11 +1,14 @@
+import StructuredData from "../components/StructuredData";
+import { businessId, businessSchema } from "@/lib/seo";
+import { site } from "@/lib/site";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/servis-kol",
-  "Servis kol Podlešín, Slaný a okolí | Custom Cycling Lab",
-  "Individuální servis silničních, gravelových i horských kol v Podlešíně u Slaného. Pro jezdce z Kladna a okolí, se svozem kola po domluvě.",
+  "Servis kol Kladno, Slaný a okolí | Custom Cycling Lab",
+  "Servis kol pro Kladno, Slaný, Prahu a Kralupy nad Vltavou. Dílna v Podlešíně, individuální péče o silniční i gravel kola a svoz po domluvě.",
 );
 
 export default function ServisKol() {
@@ -25,7 +28,7 @@ export default function ServisKol() {
               </p>
 
               <h1 className="mt-6 text-5xl md:text-7xl font-light leading-tight">
-                Precizní servis
+                Precizní servis kol
                 <br />
                 bez kompromisů.
               </h1>
@@ -57,7 +60,7 @@ export default function ServisKol() {
         <section className="px-8 py-12 md:px-16 border-b border-black/10">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-light">
-              Servis kol pro Podlešín, Slaný, Kladno a okolí
+              Servis kol pro Kladno, Slaný, Prahu a Kralupy nad Vltavou
             </h2>
             <p className="mt-5 text-black/70">
               Dílna je v Podlešíně 161/1. O kolo se postarám individuálně, od
@@ -68,6 +71,27 @@ export default function ServisKol() {
               </a>
               .
             </p>
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-light">Kladno a Slaný</h3>
+                <p className="mt-4 text-black/70">
+                  Pravidelný servis, seřízení řazení a brzd i kompletní péče o
+                  silniční, gravelová a horská kola. Kolo předáš po domluvě v
+                  dílně v Podlešíně, případně využiješ svoz.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-light">
+                  Praha a Kralupy nad Vltavou
+                </h3>
+                <p className="mt-4 text-black/70">
+                  Pokud hledáš servis kol v Praze nebo Kralupech nad Vltavou a
+                  hodí se ti individuální předání, domluvíme vyzvednutí a
+                  vrácení kola. Servis probíhá v dílně v Podlešíně; cenu svozu
+                  si potvrdíme předem.
+                </p>
+              </div>
+            </div>
             <div className="mt-6 flex flex-wrap gap-6">
               <a href="/pece-o-retez" className="underline">
                 Čištění a horké voskování řetězu
@@ -274,6 +298,17 @@ export default function ServisKol() {
         </section>
       </main>
       <Footer />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": site.origin + "/servis-kol#service",
+          url: site.origin + "/servis-kol",
+          name: "Individuální servis silničních, gravelových a horských kol",
+          provider: { "@id": businessId },
+          areaServed: businessSchema.areaServed,
+        }}
+      />
     </>
   );
 }

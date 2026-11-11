@@ -1,11 +1,14 @@
+import StructuredData from "../components/StructuredData";
+import { businessId, businessSchema } from "@/lib/seo";
+import { site } from "@/lib/site";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "/stavby-kol",
-  "Stavby kol na míru v Podlešíně | Custom Cycling Lab",
-  "Zakázkové stavby silničních, gravelových a horských kol v Podlešíně u Slaného. Osobní výběr rámu a komponentů podle rozpočtu a stylu jízdy.",
+  "Stavba kola na zakázku Kladno a okolí | Custom Cycling Lab",
+  "Stavba silničního nebo gravel kola na zakázku. Výběr rámu a komponentů na míru v Podlešíně u Slaného, pro jezdce z Kladna, Prahy a okolí.",
 );
 
 export default function StavbyKol() {
@@ -21,25 +24,29 @@ export default function StavbyKol() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <p className="uppercase tracking-[0.3em] text-sm text-black/40">
-                Stavby kol
+                Custom stavba kola
               </p>
 
               <h1 className="mt-6 text-5xl md:text-7xl font-light leading-tight">
-                Kolo,
+                Stavba kola
                 <br />
-                které budeš
-                <br />
-                milovat.
+                na zakázku.
               </h1>
+              <p className="mt-6 text-2xl font-light">
+                Kolo, které budeš milovat.
+              </p>
 
               <p className="mt-10 text-lg leading-relaxed text-black/70 max-w-xl">
-                Chceš postavit kolo, které budou kamarádi obletovat a ty si
-                splníš svůj sen?
+                Chceš silniční nebo gravel kolo na míru svému stylu jízdy?
+                Společně vybereme rám, komponenty a konfiguraci podle tvých
+                potřeb i rozpočtu.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-black/70 max-w-xl">
-                Stavba kola na zakázku je dnes symbolem toho, že cyklistiku
-                opravdu miluješ a chceš pro sebe to nejlepší možné.
+                Každé kolo na zakázku řeším osobně v dílně v Podlešíně u
+                Slaného. Stavby kol nabízím jezdcům z Kladna, Prahy, Kralup nad
+                Vltavou i širšího okolí; konzultaci a předání si domluvíme
+                předem.
               </p>
             </div>
 
@@ -56,6 +63,46 @@ export default function StavbyKol() {
           </div>
         </section>
 
+        <section className="px-8 py-20 md:px-16 border-b border-black/10">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-light">
+              Silniční a gravel kola na míru
+            </h2>
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+              <article className="border-t border-black/20 pt-6">
+                <h3 className="text-2xl font-light">
+                  Silniční kolo na zakázku
+                </h3>
+                <p className="mt-5 text-black/70 leading-relaxed">
+                  Chceš kolo na dlouhé vyjížďky, rychlé tréninky nebo závody?
+                  Při stavbě silničního kola probereme výběr rámu, posed,
+                  převody, zapletená kola i mechanické nebo elektronické řazení.
+                  Cílem je konfigurace, která odpovídá tomu, jak jezdíš.
+                </p>
+              </article>
+              <article className="border-t border-black/20 pt-6">
+                <h3 className="text-2xl font-light">Gravel kolo na zakázku</h3>
+                <p className="mt-5 text-black/70 leading-relaxed">
+                  U gravel kola řešíme poměr silnice a terénu, prostor pro
+                  pláště, převody, pohodlí a výbavu pro výlety. Ať chceš svižný
+                  gravel, nebo kolo na delší dobrodružství, sestavu vybereme
+                  podle tvého využití a rozpočtu.
+                </p>
+              </article>
+            </div>
+            <p className="mt-8 text-black/70">
+              Dílna je v Podlešíně. Pokud hledáš
+              stavbu kola v Kladně, Slaném, Praze nebo Kralupech nad Vltavou,
+              ozvi se a domluvíme konzultaci.
+            </p>
+            <a
+              href="/kontakt"
+              className="mt-6 inline-block border border-black px-6 py-3"
+            >
+              Probrat kolo na míru ↗
+            </a>
+          </div>
+        </section>
         {/* TEXT */}
         <section className="px-8 py-24 md:px-16 border-b border-black/10">
           <div className="max-w-5xl mx-auto">
@@ -207,6 +254,22 @@ export default function StavbyKol() {
         </section>
       </main>
       <Footer />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": site.origin + "/stavby-kol#service",
+          url: site.origin + "/stavby-kol",
+          name: "Stavba silničního a gravel kola na zakázku",
+          serviceType: [
+            "Zakázková stavba kola",
+            "Silniční kolo na míru",
+            "Gravel kolo na míru",
+          ],
+          provider: { "@id": businessId },
+          areaServed: businessSchema.areaServed,
+        }}
+      />
     </>
   );
 }
